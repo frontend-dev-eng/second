@@ -1,0 +1,44 @@
+.locker-unit-selection-page {
+    @include page-element-dimensions;
+    @include flex-item(column, center, space-between);
+
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            @include flex-item(column);
+
+            .selected-locker-size {
+                font-size: 1.5em;
+                color: $app-grey-color;
+            }
+
+            .locker-unit-list {
+                width: 100%;
+                margin: 2em 0;
+                @include flex-item(column, center);
+
+                .locker-unit {
+                    @include primary-button(unset, var(--btn-text-variant-color));
+                    border: 1px solid var(--btn-text-variant-color);
+                    margin-bottom: 2em;
+                    text-transform: capitalize;
+
+                    &.selected-unit {
+                        @include primary-button;
+                        border-width: 0;
+                    }
+                }
+            }
+
+            .reserve-locker-button-container {
+                @include main-element-dimensions;
+                padding-top: 0;
+                position: fixed;
+                bottom: 120px;
+            }
+        }
+    }
+}

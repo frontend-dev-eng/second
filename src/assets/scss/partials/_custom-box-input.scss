@@ -1,0 +1,9 @@
+.custom-box-input {
+    display: flex;
+    justify-content: space-evenly;
+
+    .placeholder-color {
+        @include placeholder-color;
+        font-size: toRem(15);
+    }
+}

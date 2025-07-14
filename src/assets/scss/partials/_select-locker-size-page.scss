@@ -1,0 +1,16 @@
+.select-locker-size-page {
+    @include page-element-dimensions;
+
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            .assignmentListStyle {
+                padding: 15px;
+                border-radius: 5px;
+            }
+        }
+    }
+}

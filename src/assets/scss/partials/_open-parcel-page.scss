@@ -1,0 +1,171 @@
+.open-parcel-page {
+    @include page-element-dimensions;
+ 
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            @include flex-item(column);
+
+            .lockerContainer{
+                background-color: $app-white-color;
+                padding: 10px;
+                width: 100%;
+
+                .lockerInfo{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    .profileImage{
+                        height: 80px;
+                        width: 80px;
+                        border-radius: 8px;
+                    }
+
+                    .parcelDetails{
+                        padding-left: 20px;
+
+                        .lockerTitle{
+                            font-size: 15px;
+                            font-family: var(--primary-font-medium);
+                            line-height: 18px;
+                        }
+                        .descText{
+                            color:#84799A;
+                            font-size: 13px;
+                            font-family: var(--primary-font-regular);
+                        }
+                        .lockerText {
+                            font-size: 11px;
+                            font-family: var(--primary-font-regular);
+                        }
+                    }
+                }
+
+                .dividerMainContainer {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 20px;
+
+                    .horizontalLine {
+                        flex: 1;
+                        height: 1px;
+                        background-color: $app-lavender-grey-color;
+                    }
+
+                    .textContainer {
+                        display: flex;
+                        align-items: center;
+                        
+                        .toText {
+                            font-size: 17px;
+                            color: $app-lavender-grey-color;
+                            font-family: var(--primary-font-semibold);
+                            margin: 0 10px;
+                        }
+                    }
+                }
+
+                .userBlock {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    background-color: $app-white-color;
+                    border-radius: 14px;
+                    padding: 10px 6px;
+                    width: 100%;
+                    margin-top: 6px;
+
+                    .userInfo{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+
+                        .userView {
+                            width: 52px;
+                            height: 52px;
+                            background-color: $app-tea-green-color;
+                            border-radius: 16px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .userTitle {
+                                color: $app-dark-purple-color;
+                                font-size: 22px;
+                                font-family: var(--secondary-font-semibold);
+                                text-align: center;
+                                line-height: 26px;
+                                text-transform: uppercase;
+                            }
+                        }
+
+                        .userDetails {
+                            display: flex;
+                            flex-direction: column;
+                            padding-left: 14px;
+
+                            .info {
+                                color: $app-lavender-grey-color;
+                                font-size: 11px;
+                                font-family: var(--primary-font-regular);
+                                line-height: 15px;
+                                max-width: 245px;
+                              }
+                              
+                              .name {
+                                color: $app-dark-purple-color;
+                                font-size: 15px;
+                                font-family: var(--primary-font-medium);
+                                line-height: 20px;
+                              }
+
+                        }
+                    }
+                }
+            }
+
+            .lockerDetails {
+                justify-content: center;
+                align-items: center;
+                padding: 15px 30px;
+
+                .lockerPrefix {
+                    color:#84799A;
+                    font-family: 'SFProText-Semibold';
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-align: center;
+                    padding-top: 22px;
+                }
+
+                .lockerNumber {
+                    color: $app-bittersweet-color;
+                    font-family: 'SFProText-Semibold';
+                    font-size:18px;
+                    text-align: center;
+                }
+            }
+
+            .closeText {
+                color: $app-dark-purple-color;
+                font-family: 'SFProText-Semibold';
+                font-size: 17px;
+                text-align: center;
+                padding-bottom: 30px;
+            }
+
+            .buttonContainer{
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                width: 100%;
+                align-items: center;
+            }
+        }
+    }
+}

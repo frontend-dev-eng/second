@@ -1,0 +1,137 @@
+.equipment-card {
+    padding: 10px 0px;
+    @include flex-item(row, center, flex-start);
+    background-color: transparent !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+
+    .card-content {
+        padding: 0px !important;
+
+        &.content-col-1 {
+            width: 30%;
+            @include flex-item;
+
+            .equipment-image {
+                min-width: 100px;
+                padding: 10px;
+                border-radius: 8px;
+                background-color: #F4F2F8;
+            }
+        }
+
+        &.content-col-2 {
+            margin-left: 20px;
+            @include flex-item(column, flex-start, flex-start);
+
+            .equipment-title {
+                margin-top: 4px;
+                @include app-text($app-dark-purple-color, 14px, var(--primary-font-medium));
+            }
+
+            .equipment-description {
+                margin-top: 2px;
+                @include app-text(var(--tertiary-text-color), 12px);
+
+                max-height: $base-font-size * 2.5; // temporary solution to ellipsise text content. Need to research
+                overflow: hidden;
+            }
+            
+                        .timer-indicator-container {
+                            @include flex-item(row, center, flex-start,wrap);
+            
+                            .timer-indicator {
+                                padding: 10px 22px;
+                                background-color: #F7F7F7;
+                                border-radius: 100px;
+            
+                                .timer-text {
+                                    @include app-text(var(--primary-text-color), 10px, var(--primary-font-regular));
+                                }
+                            }
+                        }
+
+            .availability-indicator-container {
+                @include flex-item(row, center, flex-start, wrap);
+                
+                .availability-indicator {
+                    padding: 4px 16px;
+                    border-radius: 9999px;
+                    margin-top: 6px;
+                    @include flex-item(row, center, center);
+
+                    &.available {
+                        background-color: #D6FFD8;
+
+                        .circle-icon {
+                            @include app-text(#03A700, 6px);
+                        }
+
+                        .availability-text {
+                            margin-left: 6px;
+                            @include app-text(#03A700, 12px, var(--primary-font-regular));
+                        }
+                    }
+
+                    &.not-available {
+                        background-color: #FFFBD6;
+                        margin-right: 10px;
+
+                        .circle-icon {
+                            @include app-text(#A78200, 6px);
+                        }
+
+                        .availability-text {
+                            margin-left: 6px;
+                            @include app-text(#A78200, 12px, var(--primary-font-regular));
+                        }
+                    }
+                }
+
+                .notify-me-button {
+                    padding: 3px 16px;
+                    border-radius: 9999px;
+                    margin-top: 6px;
+                    background-color: #222222;
+                    @include app-text($app-white-color, 12px, var(--primary-font-regular));
+                    text-transform: capitalize;
+
+                    .notification-icon {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.equipment-item-blocked{
+    background: linear-gradient($app-bittersweet-color, $app-english-vermillion-color);
+    // opacity: 0.5;
+}
+
+@media (max-width: 400px) {
+    .equipment-card {
+        .card-content {
+            &.content-col-2 {
+                margin-left: 10px;
+
+                .availability-indicator-container {
+                    .availability-indicator {
+                        &.available, &.not-available {
+                            .availability-text {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+
+                    .notify-me-button {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

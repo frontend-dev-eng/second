@@ -1,0 +1,133 @@
+.assign-locker-page {
+    @include page-element-dimensions;
+
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            @include flex-item(column);
+
+            .assignLockerWrapper {
+                background-color: $app-white-color;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                padding-left: 24px;
+                padding-right: 24px;
+                width: 100%;
+
+                .lockerInfo {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    .lockerdetails {
+                        padding-left: 20px;
+
+                        .lockerTitle {
+                            color: $app-dark-purple-color;
+                            font-size: 15px;
+                            font-family: var(--primary-font-medium);
+                        }
+
+                        .lockerLocation {
+                            color: $app-grey-color;
+                            font-size: 13px;
+                            font-family: var(--primary-font-regular);
+                        }
+
+                        .lockerText {
+                            color: $app-dark-purple-color;
+                            font-size: 11px;
+                            font-family: var(--primary-font-regular);
+                            width: 180px;
+                        }
+                    }
+                }
+
+                .LockedText {
+                    color: #4E7509;
+                    font-size: 11px;
+                    width: 70px;
+                    text-align: center;
+                    padding-top: 6px;
+                    font-family: var(--primary-font-regular);
+                }
+            }
+
+            .assignLockerBlock {
+                justify-content: center;
+                align-items: center;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+                padding-right: 30px;
+
+                .assignLockerSubBlock {
+                    position: relative;
+                }
+
+                .lockerPrefix {
+                    color: #84799A;
+                    font-family: 'SFProText-Semibold';
+                    font-size: 18px;
+                    text-align: center;
+                    padding-top: 10px;
+                }
+            }
+
+            .lockerAssignedText {
+                color: $app-dark-purple-color;
+                font-family: 'SFProText-Semibold';
+                font-size: 17px;
+                text-align: center;
+                padding-bottom: 22px;
+            }
+
+            .backHomeText {
+                color: $app-yellow-green-color;
+                font-size: 13px;
+                font-family: var(--primary-font-medium);
+                padding-bottom: 25px;
+            }
+
+            .lockerInfo {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .releaseText {
+                    color: $app-english-violet-color;
+                    font-size: 16px;
+                    font-family: var(--primary-font-regular);
+                    padding-left: 5px;
+                }
+            }
+
+            .openLockerSlider {
+                width: 100%;
+                padding-top: 20px;
+
+            }
+
+            .containerView {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 100px 24px;
+               
+                .errorMessageText{
+                    color:$app-dark-purple-color;
+                    font-size: 14px;
+                    font-family: 'SegoeUI-Bold';
+                    text-align: center;
+                    padding-top: 30px;
+                }
+            }
+            
+           
+        }
+    }
+}

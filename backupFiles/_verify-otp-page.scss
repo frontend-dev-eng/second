@@ -1,0 +1,90 @@
+.app {
+  .verify-otp-page {
+    @include page-element-dimensions;
+    //height: 100vh;
+
+    &.img {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .main-container {
+      padding: 0px 20px;
+
+      .main {
+        .logo-container, .app-logo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 40px 0px;
+        }
+
+        .sub-heading {
+          font-family: var(--primary-font);
+          font-weight: var(--font-weight-semibold);
+          font-size: var(--font-size-heading-2-regular);
+          padding-bottom: 10px;
+        }
+
+        .paragraph {
+          font-family: var(--primary-font);
+          font-weight: var(--font-weight-regular);
+          font-size: var(--font-size-body-text-regular);
+          color: var(--color-charcoal);
+          opacity: 0.5;
+          padding-bottom: 1.5rem;
+          line-height: 1.6;
+        }
+
+        .button-container {
+          padding: 1rem 0;
+        }
+        .verify-input-error{
+          @include validation-error-text;
+      }
+
+        .timer-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .timeTxt {
+          font-size: 1.5rem;
+          color: var(--color-lime-green); 
+          text-align: center;
+          font-family: var(--primary-font); 
+        }
+
+        .have-recive-otp-container {
+          text-align: center;
+          .otp-text {
+            color: #ccc;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+          }
+
+          .resend-link {
+            color: #ccc;
+            text-decoration: underline;
+            cursor: not-allowed;
+            margin-left: 4px;
+            transition: color 0.3s ease;
+            font-family: var(--primary-font);
+            &.active-resend {
+              color: var(--primary-font); 
+              cursor: pointer;
+            }
+
+            &:hover {
+              color: #888;
+            }
+          }
+        }
+      }
+    }
+  }
+}

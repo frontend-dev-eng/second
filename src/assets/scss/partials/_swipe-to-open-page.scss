@@ -1,0 +1,33 @@
+.swipe-to-open-page {
+    @include page-element-dimensions;
+    @include flex-item(column, center, space-between);
+
+    .main-container {
+        width: 100%;
+        min-height: 70%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            min-height: 70%;
+            @include flex-item(column);
+
+            .locker-icon-container {
+                margin-bottom: 1em;
+            }
+
+            .locker-bank-name, .locker-unit {
+                margin-bottom: 1em;
+                @include app-text(var(--tertiary-text-color), 18px);
+            }
+
+            .slide-to-open-button-container {
+                width: 100%;
+
+                .slide-button {
+                    height: 3.5em;
+                }
+            }
+        }
+    }
+}

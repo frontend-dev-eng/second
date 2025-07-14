@@ -1,0 +1,23 @@
+.sublocation-three-page {
+    @include main-element-dimensions;
+    @include page-element-dimensions;
+    @include flex-item(column, center);
+
+
+    .main-container {
+        width: 100%;
+
+        .listItem {
+            width: 100%;
+            background-color: $app-white-color;
+            border-radius: 8px;
+        }
+
+        .itemTitle {
+            margin-left: 20px;
+            font-size: 20px;
+            font-family: var(--primary-font-regular);
+            color: $app-dark-purple-color;
+        }
+    }
+}

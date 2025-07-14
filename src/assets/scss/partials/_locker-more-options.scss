@@ -1,0 +1,332 @@
+.locker-more-option {
+  // @include page-element-dimensions;
+
+  .main-container {
+    .mainWrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .lockerIcon {
+        display: flex;
+        padding: 5px;
+        margin: 10px 10px 0 auto;
+        border: 1px solid $app-yellow-green-color;
+        border-radius: 6px;
+
+        .lockerStatusText {
+          color: $app-yellow-green-color;
+          font-size: 13px;
+          font-family: var(--primary-font-medium);
+          text-transform: uppercase;
+          padding-left: 5px;
+        }
+
+        .closeIconText {
+          color: red;
+        }
+      }
+
+      .lockedIcon {
+        border-color: $app-yellow-green-color;
+      }
+    }
+
+    .lockerDetailsBlock {
+      padding: 0 20px 0 20px;
+
+      .imageGroup {
+        position: relative;
+        display: inline-block;
+        bottom: 15px;
+        left: 8%;
+      }
+
+      .lockerInfo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .lockerPosition {
+          position: relative;
+        }
+
+        .lockerdetails {
+          padding-left: 20px;
+
+          .lockerTitle {
+            font-size: toRem(15);
+            font-family: var(--primary-font-medium);
+            line-height: 18px;
+            max-width: 220px;
+            margin-bottom: 4px;
+          }
+
+          .lockerLocation {
+            font-size: 13px;
+            font-family: var(--primary-font-regular);;
+            line-height: 15px;
+            margin-bottom: 4px;
+          }
+
+          .lockerText {
+            font-size: 11px;
+            font-family: var(--primary-font-regular);;
+            line-height: 13px;
+            opacity: 0.6;
+            margin-bottom: 4px;
+          }
+        }
+      }
+    }
+
+    .tabBarLabel {
+      font-size: toRem(13);
+      font-family: var(--primary-font-medium);
+      line-height: 15px;
+      color: $app-grey-color;
+    
+      &.Mui-selected {
+        color: #7CB01F;
+      }
+    }
+    
+    .tabBarStyle {
+      // background-color: #fff;
+    }
+    
+    .releaseTabLabel {
+      color: #FF6464;
+    }
+    
+    .indicatorStyle {
+      background-color: #7CB01F;
+    }
+
+    .activityViewWrap {
+      flex-grow: 1;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding: 15px 20px 15px 20px;
+
+      .activityContainer {
+        display: flex;
+        padding: 20px;
+
+        .logDate {
+          color: $app-grey-color;
+          font-family: var(--primary-font-semibold);
+          font-size: 15px;
+          line-height: 20px;
+          padding-right: 6px;
+        }
+  
+        .activityDate {
+          flex: 1;
+          height: 0.5px;
+          background-color: #000;
+          align-self: center;
+        }
+      }
+      
+      .activityView {
+        background-color: $app-white-color;
+        padding :10px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        
+        .logUserName{
+          font-size: 15px;
+          color:$app-dark-purple-color;
+          font-family: var(--secondary-font-semibold);
+          text-align: center;
+        }
+  
+        .flexView {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+  
+        .logTime {
+          color: $app-grey-color;
+          font-size: 11px;
+          padding-left: 4px;
+          font-family: var(--primary-font-medium);
+          line-height: 13px;
+        }
+        
+      }
+    }
+    
+    
+    .logsNotAvailableBlock{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 27px;
+
+      .NoLockerText {
+        font-size: 18px;
+        font-family: 'SegoeUI-Bold',sans-serif;
+        color: $app-dark-purple-color; 
+        padding-top: 15px;
+        padding-bottom: 13px;
+      }
+      
+    }    
+
+    .shareLockerContainer{
+      padding: 24px 20px;
+
+      .shareLockerBlock {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .share-text {
+          color: $app-green-color
+        }
+
+        .shareTitle{
+          font-size: toRem(17);
+          font-family:var(--primary-font-semibold);
+        }
+      }
+
+      .shareTextStyle {
+        padding-top: 35px;
+        justify-content: center;
+        text-align: center;
+
+        .noShareText {
+          color: $app-english-violet-color;
+          font-size: 18px;
+          font-family: 'SegoeUI-Bold',sans-serif;
+          text-align: center;
+          padding-top: 32px;
+          padding-bottom: 10px;
+        }
+        
+        .shareWithText {
+          color: $app-grey-color;
+          font-size: 16px;
+          font-family: 'SegoeUI',sans-serif;
+          text-align: center;
+          padding-bottom: 30px;
+        }
+        
+      }
+        
+      .listItem {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: $app-white-color;
+        border-radius: 14px;
+        margin-top: 6px;
+        padding: 8px 21px 8px 6px;
+        width: 100%;
+        justify-content: space-between;
+
+        .multipleShareRow {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .userView {
+            width: 52px;
+            height: 52px;
+            background-color: $app-tea-green-color;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          
+          .userName {
+            color: $app-dark-purple-color; 
+            font-size: 22px;
+            font-family: var(--secondary-font-semibold);
+            text-align: center;
+          }
+        }
+
+        .multipleShareColumn {
+          display: flex;
+          flex-direction: column;
+          padding-left: 14px;
+
+          .info {
+            color: $app-grey-color;
+            font-size: 11px;
+            font-family: var(--primary-font-regular);
+            line-height: 15px;
+            max-width: 245px;
+          }
+          
+          .name {
+            color: $app-dark-purple-color;
+            font-size: 15px;
+            font-family: var(--primary-font-medium);
+            line-height: 20px;
+          }
+          
+        }
+
+        .removeIcon{
+          color: $app-yellow-green-color;
+        }
+
+        .isOwner {
+          color: $app-green-color;
+          font-size: 13px; 
+          font-family: var(--primary-font-medium);
+        }
+      }
+
+      .modalWrapper {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.8);
+
+        .modalView {
+          padding: 25px 30px;
+          background-color: #fff;
+          border-radius: 6px;
+          align-items: center;
+          display: flex; 
+          flex-direction: column;
+        
+          .modalText {
+            text-align: center;
+            color: $app-dark-purple-color; 
+            font-size: 22px;
+            font-family: var(--secondary-font-semibold);
+            padding-bottom: 14px;
+          }
+        }
+        
+        .modalRow {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-top: 23px;
+          justify-content: center;
+        }
+      }
+      
+      .cancel{
+        color: #FF6464 !important;
+      }
+    }
+  }
+}

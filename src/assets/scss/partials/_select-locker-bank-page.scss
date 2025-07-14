@@ -1,0 +1,24 @@
+.select-locker-bank-page { 
+    @include main-element-dimensions;
+    @include page-element-dimensions;
+    @include flex-item(column, center);
+
+    .main-container {
+        width: 100%;
+        margin-bottom: 90px;
+        overflow-y: scroll;
+
+        .no-locker-bank-text {
+            color:$app-dark-purple-color;
+            font-size: toRem(15);
+            font-family:var(--primary-font-medium);
+            line-height: 20px;
+            padding-top: 20px;
+            text-align: center;
+
+            &.dark-text {
+                color : $app-white-color
+            }
+        }
+    }
+}

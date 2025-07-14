@@ -1,0 +1,302 @@
+.equipment-details-page {
+    @include page-element-dimensions;
+    @include flex-item(column, center, space-between);
+
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            @include flex-item(column);
+            padding-bottom: 80px;
+
+            .title-and-description-container {
+                .title {
+                    @include app-heading(var(--primary-text-color), 20px, var(--primary-font-bold));
+                    text-align: center;
+                }
+
+                .description {
+                    margin-top: 2px;
+                    @include app-text(var(--tertiary-text-color), 14px);
+                    text-align: center;
+                }
+            }
+
+            .equipment-images {
+                width: 100%;
+                margin: 30px 0px;
+
+                .swiper.image-carousel {
+                    width: 100%;
+
+                    .swiper-wrapper {
+                        .swiper-slide.image-slide {
+                            width: 100%;
+                            @include flex-item;
+
+                            .equipment-image {
+                                width: 100%;
+                                max-width: 280px;
+                                height: auto;
+                                border-radius: 10px;
+                                background-color: #F4F2F8;
+                            }
+                        }
+                    }
+
+                    .swiper-pagination {
+                        margin-top: 10px;
+                        position: static !important;
+
+                        .swiper-pagination-bullet-active {
+                            background-color: $app-english-violet-color;
+                        }
+                    }
+                }
+            }
+
+            .pricing-info {
+                align-self: flex-start;
+
+                .min-price-in-words {
+                    @include app-heading-3($font-color: var(--primary-text-color), $font-family: var(--primary-font-bold));
+                }
+
+                .max-price-in-words {
+                    @include app-text($app-dark-purple-color, 14px);
+                }
+
+                .pricing-info-button {
+                    margin-top: 8px;
+                    @include flex-item(row, center, flex-start);
+
+                    .pricing-info {
+                        @include tertiary-button($app-dark-purple-color);
+                        @include app-heading-4($font-color: var(--primary-text-color), $font-family: var(--primary-font-bold));
+                    }
+                }
+            }
+
+            .pricing-and-equipment-info-divider {
+                width: 100%;
+                margin: 30px 0px;
+            }
+
+            .equipment-includes-info {
+                width: 100%;
+
+                .title {
+                    @include app-heading-3($font-color: var(--primary-text-color), $font-family: var(--primary-font-bold));
+                }
+
+                .images-outer-container {
+                    width: 100%;
+                    overflow-x: scroll;
+
+                    .images-inner-container {
+                        padding-bottom: 8px;
+                        margin-top: 20px;
+                        display: flex;
+
+                        .image-wrapper {
+                            // width, height styles are in JS file
+                            background-color: #F4F2F8;
+                            border-radius: 8px;
+                            @include flex-item;
+
+                            .equipment-image {
+                                width: 100%;
+                                height: auto;
+                                border-radius: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .help-instructions {
+                width: 100%;
+                margin: 40px 0px;
+
+                .title {
+                    @include app-heading-3($font-color: var(--primary-text-color), $font-family: var(--primary-font-bold));
+                }
+
+                .instructions {
+                    width: 100%;
+                    margin-top: 10px;
+                    @include app-text(var(--tertiary-text-color), 14px);
+                    overflow-x: hidden;
+
+                    // following styles is for the content coming from API call
+                    h2 {
+                        @include app-heading-4(var(--tertiary-text-color));
+                    }
+
+                    ul {
+                        width: 100%;
+                        padding-left: 20px;
+                    }
+                }
+            }
+
+            .rent-button-container
+             {
+                width: 100%;
+                max-width: $max-content-width;
+                padding: 16px;
+                background-color: #F3F3F3;
+                box-shadow: 0px -4px 15px 0px #0000001A;
+                position: fixed;
+                bottom: 0px; // to show above the exisitng footer
+
+                .rent-now-button {
+                    width: 100%;
+                    @include app-text(var(--secondary-text-color), 20px, var(--secondary-font-bold));
+                    text-transform: capitalize;
+                    z-index: 100;
+                }
+
+                .notify-me-button {
+                    width: 100%;
+                    @include app-text(var(--secondary-text-color), 20px, var(--secondary-font-bold));
+                    text-transform: capitalize;
+                    z-index: 100;
+                }
+            }
+
+            .notify-button-container{
+                @extend .rent-button-container
+            }
+        }
+    }
+}
+
+body {
+    .pricing-info-modal-container {
+        width: 100%;
+        max-width: 480px;
+        margin: auto;
+        @include flex-item(row, flex-end);
+
+        .pricing-info-modal-content {
+            width: 100%;
+            padding: 20px;
+            border-top-left-radius: 1em;
+            border-top-right-radius: 1em;
+            background-color: white;
+            outline: unset;
+            animation: slide-up 0.2s ease-out;
+
+            @keyframes slide-up {
+                from {
+                    transform: translateY(100%);
+                }
+
+                to {
+                    transform: translateY(0);
+                }
+            }
+
+            .title-and-close-button {
+                @include flex-item(row, center, space-between);
+
+                .pricing-info-title {
+                    @include app-heading-3(var(--primary-text-color), var(--primary-font-bold));
+                }
+            }
+
+            .pricing-help {
+                margin: 20px 0;
+                @include app-text(var(--tertiary-text-color), 14px);
+
+                h2 {
+                    @include app-heading-4(var(--primary-text-color), var(--primary-font-bold));
+                }
+            }
+
+            .pricing-info {
+                margin-top: 20px;
+
+                .title {
+                    @include app-heading-4(var(--primary-text-color), var(--primary-font-bold));
+                }
+
+                .equipment-price {
+                    margin-top: 10px;
+                    @include app-text(var(--tertiary-text-color), 14px);
+                }
+            }
+        }
+    }
+
+    .card-info-modal-container {
+        width: 100%;
+        max-width: 480px;
+        margin: auto;
+        @include flex-item(row, flex-end);
+
+        .card-info-modal-content {
+            width: 100%;
+            padding: 20px;
+            border-top-left-radius: 1em;
+            border-top-right-radius: 1em;
+            background-color: white;
+            outline: unset;
+            animation: slide-up 0.2s ease-out;
+
+            @keyframes slide-up {
+                from {
+                    transform: translateY(100%);
+                }
+
+                to {
+                    transform: translateY(0);
+                }
+            }
+
+            .title-and-close-button {
+                @include flex-item(row, center, space-between);
+
+                .card-info-title {
+                    @include app-heading-3(var(--primary-text-color), var(--primary-font-bold));
+                }
+            }
+
+            .card-help {
+                margin: 20px 0;
+                @include app-text(var(--tertiary-text-color), 14px);
+
+                h2 {
+                    @include app-heading-4(var(--primary-text-color), var(--primary-font-bold));
+                }
+            }
+
+            .card-info {
+                margin-top: 20px;
+
+                .title {
+                    @include app-heading-4(var(--primary-text-color), var(--primary-font-bold));
+                }
+            }
+
+            .card-number-input {
+
+                .card-placeholder {
+                    @include placeholder-color("#000000")
+                }
+            }
+
+            .cvv-and-expiry-input-container {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                gap: 30px;
+                margin-top: 20px;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.timer{
+    .timerUI {
+        color: $app-white-color;
+        font-size: 12px;
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
+}

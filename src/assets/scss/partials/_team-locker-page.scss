@@ -1,0 +1,46 @@
+.team-locker-page {
+    @include page-element-dimensions;
+    @include flex-item(column, center, space-between);
+
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            @include flex-item(column);
+
+            .container {
+                flex: 1;
+                position: relative;
+            }
+
+            .title{
+                font-size: 22px;
+                color: $app-dark-purple-color;
+                line-height: 26px;
+                font-family: var(--secondary-font-semibold);
+                padding-bottom: 18px;
+            }
+
+            .commentBox {
+                background-color: #FFFFFF;
+                border-radius: 8px;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+                width: 100%;
+                font-size:16px;
+                color: $app-dark-purple-color;
+                text-align: left;
+                min-height: 160px;
+                font-family: var(--primary-font-regular);;
+                margin-bottom: 20px;
+
+                .MuiOutlinedInput-root {
+                    fieldset {
+                      border: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.parcel-details-screen-page {
+    @include page-element-dimensions;
+    @include main-element-dimensions;
+
+    .main-container {
+        display :flex;
+        flex-direction : column;
+        justify-content : space-between;
+        height : 100%;
+        margin-bottom: 20px;
+
+        .top-container {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 60px;
+            
+            .bank-details-view {
+                margin-left: 15px;
+
+
+                .locker-bank-detail-text {
+                    font-family: var(--primary-font-medium);
+                    font-weight: bold;
+                }
+
+                .locker-bank-location {}
+            }
+
+        }
+
+        .parcel-details-text-view {
+
+            .camera-view{
+                display: flex;
+                flex-direction: column;
+                margin-top: 40px;
+
+                .icon-view {
+                    display: flex;
+                    align-self: center;
+                }
+
+                .take-photo-text{
+                    text-align: center;
+                }
+            }
+        }
+
+        .input-view{
+            width:  100%;
+
+            .input {
+                color: $app-dark-purple-color;
+                box-shadow: 0px 7px 10px -5px rgba(0,0,0,0.32);
+                height: 40;
+                background-color: $app-white-color;
+                border-radius: 6;
+                font-family: var(--primary-font-regular);;
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+        }
+
+    }
+}

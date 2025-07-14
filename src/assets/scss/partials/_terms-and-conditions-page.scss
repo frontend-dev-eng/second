@@ -1,0 +1,29 @@
+.term-and-condition-page {
+    text-align: justify;
+
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+
+            .section {
+                margin-bottom: 30px;
+            }
+            .title{
+                margin-bottom: 10px;
+                font-family:var(--secondary-font-semibold);
+            }
+        
+            .paraText {
+                margin-bottom: 10px;
+                font-family:var(--primary-font-regular);;
+            }
+            
+            .listItem {
+                padding-left: 10px;
+            }
+        }
+    }
+}

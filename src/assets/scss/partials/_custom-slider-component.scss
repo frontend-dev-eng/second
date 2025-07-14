@@ -1,0 +1,39 @@
+.swipeBtn {
+    padding-left: 36px;
+
+    .swipeText {
+        color: $app-white-color;
+        font-size: toRem(16);
+        font-family: var(--primary-font-bold);
+        line-height: 20px;
+    }
+    
+    .lockerText {
+        color: $app-white-color;
+        font-size: toRem(11);
+        font-family: var(--primary-font-medium);
+        line-height: 15px;
+    }
+}
+
+.slide-button {
+    @include item-border(1px, solid, var(--slider-background-color), var(--slider-border-radius));
+    background-color: var(--slider-background-color);
+    height: 75px;
+
+    .slide-button-overlay {
+        border-radius: 5px;
+        background-color: var(--slider-overlay-bg-color) !important;
+
+        .slide-button-caret {
+            border-radius: 5px;
+            background-color: var(--slider-caret-bg-color) !important;
+
+            #chevrons-right {
+                width: 2em;
+                fill: var(--slider-caret-color);
+            }
+        }
+    }
+}
+

@@ -1,0 +1,15 @@
+.locker-list {
+    .locker-content {
+        background-color: $app-white-color;
+        padding: 18px 23px;
+        border-radius: 14px;
+        margin-bottom: 4px;
+
+        .locker-number {
+            color: $app-dark-purple-color;
+            font-size: 15px;
+            line-height: 20px;
+            font-family: var(--primary-font-medium);
+        }
+    }
+}

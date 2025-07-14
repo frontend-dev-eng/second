@@ -1,0 +1,34 @@
+.list-item {
+    width: 100%;
+    background-color: $app-white-color;
+    border-radius: 8px;
+
+
+    .initial-view {
+        border-radius: 16px;
+        padding:  10px;
+        margin-right:  8px;
+        width: 52px;
+        height: 52px;
+    }
+
+    .favourite-view {
+        position:  absolute;
+        top : 20px;
+        right : 14px;
+    }
+
+    .title-view {
+        margin-right: 30px;
+        
+        .item-title-text {
+            margin-left: 5px;
+            font-size: toRem(20);
+            @media (max-width: 360px) {
+                font-size: toRem(16);
+            }
+            font-family: var(--primary-font-regular);
+            color: $app-dark-purple-color;
+        }
+    }
+}

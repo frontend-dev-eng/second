@@ -1,0 +1,87 @@
+.notification-page {
+    @include page-element-dimensions;
+
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            @include flex-item(column);
+
+            .container {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .assignText {
+                font-size: 18px;
+                font-family: 'SegoeUI-Bold', sans-serif;
+                color: $app-dark-purple-color;
+                padding-top: 50px;
+                padding-bottom: 13px;
+                line-height: 24px;
+            }
+
+            .assignPara {
+                color: $app-grey-color;
+                font-size: 16px;
+                text-align: center;
+                padding-bottom: 50px;
+                font-family: 'SegoeUI', sans-serif;
+            }
+
+            .activityView {
+                background-color:$app-white-color;
+                // padding: 20px;
+                border-radius: 14px;
+                margin-top: 12px;
+            }
+
+            .flexView {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .logTime {
+                color: $app-grey-color;
+                font-size: 11px;
+                padding-left: 4px;
+                font-family: var(--primary-font-regular);;
+                line-height: 13px;
+            }
+
+            .Action {
+                color: $app-dark-purple-color;
+                font-size: 14px;
+                font-family: var(--primary-font-regular);;
+                text-align: center;
+            }
+
+            .userName {
+                font-family: var(--primary-font-regular);;
+            }
+
+            .notificationList {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .flexGrow {
+                flex-grow: 1;
+            }
+
+            .responsiveFont {
+                font-size: 15px;
+            }
+
+            .icon-style{
+                margin-left: auto;
+            }
+        }
+    }
+}

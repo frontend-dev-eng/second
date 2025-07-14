@@ -1,0 +1,13 @@
+.input-container {
+    background-color: $app-white-color;
+    color: $app-dark-purple-color;
+    border-radius: var(--input-border-radius);
+
+    .placeholder-color {
+        @include placeholder-color
+    }
+}
+
+.reason-validation-error {
+    @include validation-error-text;
+}

@@ -1,0 +1,141 @@
+.react-modal-overlay.user-modal-overlay {
+    padding: 3.6em 20px 0 20px;
+    @include flex-item(column, center, center);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #A0A0A088;
+    backdrop-filter: blur(5px);
+
+    .react-modal.user-modal {
+        max-width: $max-content-width;
+        padding: 40px 20px;
+        border-radius: 5px;
+        background-color: $app-white-color;
+
+        .user-modal-content {
+            width: 100%;
+
+            .user-information-and-navigation-options {
+                width: 100%;
+
+                .user-information {
+                    width: 100%;
+                    height: 3.5em;
+                    @include flex-item(row, stretch, space-between, nowrap);
+
+                    .icon-container.user-icon-container {
+                        width: 3.5em;
+                        margin-right: 20px;
+
+                        .icon-md-account-circle {
+                            width: 100%;
+                            height: 100%;
+                            color: $app-dark-purple-color;
+                        }
+                    }
+
+                    .email-and-phone-container {
+                        @include flex-item(column, flex-start, space-between);
+
+                        .user-email-container {
+                            margin-bottom: 10px;
+                            @include flex-item(row, center, space-between, nowrap);
+
+                            .icon-container {
+                                margin-right: 10px;
+                                @include flex-item;
+
+                                .icon-md-email {
+                                    color: $app-dark-purple-color;
+                                }
+                            }
+
+                            .user-email {
+                                @include flex-item;
+                                color: $app-english-violet-color;
+                            }
+                        }
+
+                        .user-phone-container {
+                            @include flex-item(row, center, space-between, nowrap);
+
+                            .icon-container {
+                                margin-right: 10px;
+                                @include flex-item;
+
+                                .icon-md-phone {
+                                    color: $app-dark-purple-color;
+                                }
+                            }
+
+                            .user-phone {
+                                @include flex-item;
+                                color: $app-english-violet-color;
+                            }
+                        }
+                    }
+                }
+
+                .line-divider {
+                    width: 100%;
+                    border-top: 1px solid $app-light-grey-color;
+                    margin: 20px 0;
+                }
+
+                .navigation-options {
+                    width: 100%;
+                    @include flex-item(column, center, space-between);
+
+                    .logout-container {
+                        width: 100%;
+                        @include flex-item(row, center, flex-start, nowrap);
+                        cursor: pointer;
+
+                        .icon-container {
+                            margin-right: 10px;
+                            @include flex-item;
+
+                            .icon-md-logout {
+                                font-size: 1.5em;
+                                color: $app-dark-purple-color;
+                            }
+                        }
+
+                        .logout-option {
+                            @include flex-item;
+                            color: $app-english-violet-color;
+                        }
+                    }
+                }
+            }
+
+            .logout-confirmation-message-container {
+                width: 100%;
+
+                .logout-confirmation-message {
+                    margin-bottom: 20px;
+                    font-size: 1em;
+                    color: $app-dark-purple-color;
+                }
+
+                .buttons-container {
+                    width: 100%;
+                    @include flex-item(row, center, space-between);
+
+                    .cancel-button {
+                        // @include secondary-button($app-white-color, $app-white-color, $app-dark-purple-color);
+                        margin-right: 20px;
+                        border-color: $app-dark-purple-color;
+                    }
+
+                    .logout-button {
+                        @include primary-button($app-dark-purple-color, $app-dark-purple-color, $app-white-color);
+                    }
+                }
+            }
+        }
+    }
+}

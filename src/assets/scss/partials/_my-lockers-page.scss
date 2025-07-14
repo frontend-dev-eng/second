@@ -1,0 +1,544 @@
+.my-lockers-page {
+    @include page-element-dimensions;
+    @include flex-item(column, center, space-between);
+    @media (max-height: 700px) {
+        height: 120vh;
+    }
+
+    .header-container {
+        width: 100%;
+        @include flex-item;
+        background-color: $app-white-color;
+
+        .header {
+            @include header-element-dimensions;
+            height: 3.5em;
+            @include flex-item;
+            position: relative;
+
+            .page-heading {
+                font-size: 1em;
+                color: $app-dark-purple-color;
+            }
+
+            img.durolt-logo {
+                width: auto;
+                height: 1.5em;
+                margin: 1em 0em;
+                position: absolute;
+                right: 20px;
+                bottom: 0px;
+            }
+
+            .user {
+                @include flex-item;
+                position: absolute;
+                right: 20px;
+                cursor: pointer;
+
+                .icon-md-account-circle {
+                    font-size: 1.8em;
+                    color: $app-dark-purple-color;
+                }
+            }
+        }
+    }
+
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            @include flex-item(column);
+
+            .loading-icon-container {
+                width: 3em;
+            }
+
+            .loading-text {
+                color: $app-green-color;
+            }
+
+            .booked-lockers-list {
+                width: 100%;
+
+                .booked-locker {
+                    width: 100%;
+                    border-radius: 5px;
+                    margin-bottom: 2em;
+                    background-color: $app-white-color;
+                    cursor: pointer;
+
+                    .locker-information-container {
+                        width: 100%;
+                        padding: 10px;
+                        border-radius: 5px;
+                        background-color: $app-yellow-green-color;
+                        @include flex-item(row, center, space-between, nowrap);
+
+                        .icon-container.locker-icon-container {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 5px;
+                            background-color: $app-yellow-green-color;
+                            @include flex-item;
+
+                            .icon-md-square {
+                                font-size: 1.5em;
+                                color: $app-dark-purple-color;
+                            }
+                        }
+
+                        .locker-information {
+                            width: 100%;
+
+                            .locker-unit-container {
+                                width: 100%;
+                                @include flex-item(row, center, flex-start, nowrap);
+
+                                .icon-container {
+                                    width: 40px;
+                                    height: 40px;
+                                    @include flex-item;
+
+                                    .icon-ri-door-lock-box-fill {
+                                        font-size: 1.8em;
+                                        color: $app-dark-purple-color;
+                                    }
+                                }
+
+                                .locker-unit {
+                                    font-size: 1.5em;
+                                    color: $app-dark-purple-color;
+                                }
+                            }
+
+                            .locker-bank-name-and-remaining-time-container {
+                                width: 100%;
+                                @include flex-item(row, center, space-between, wrap);
+
+                                .locker-bank-name-container {
+                                    @include flex-item(row, center, flex-start, nowrap);
+
+                                    .icon-container {
+                                        width: 40px;
+                                        height: 24px;
+                                        @include flex-item;
+
+                                        .icon-gi-lockers {
+                                            font-size: 1.2em;
+                                            color: $app-dark-purple-color;
+                                        }
+                                    }
+
+                                    .locker-bank-name {
+                                        font-size: 0.8em;
+                                        color : $app-dark-purple-color;
+
+                                    }
+                                }
+
+                                .remaining-time-container {
+                                    @include flex-item(row, center, flex-start, nowrap);
+
+                                    .icon-container {
+                                        width: 40px;
+                                        height: 24px;
+                                        @include flex-item;
+
+                                        .icon-io-timer {
+                                            font-size: 1.2em;
+                                            color: $app-dark-purple-color;
+                                        }
+                                    }
+
+                                    .remaining-time {
+                                        font-size: 0.8em;
+                                        color: $app-dark-purple-color;
+                                    }
+                                }
+                            }
+                        }
+
+                        .icon-container.chevron-icon-container {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 5px;
+                            @include flex-item;
+
+                            .icon-md-chevron-right {
+                                font-size: 2em;
+                                color: $app-dark-purple-color;
+                                transition: 0.2s;
+                            }
+                        }
+                    }
+
+                    &.accordion-expanded {
+                        .locker-information-container {
+                            .icon-container.chevron-icon-container {
+                                .icon-md-chevron-right {
+                                    transform: rotate(90deg);
+                                }
+                            }
+                        }
+                    }
+
+                    .locker-detailed-information-container {
+                        width: 100%;
+                        padding: 10px 10px 20px 10px;
+
+                        .locker-bank-name-container {
+                            width: 100%;
+                            margin-bottom: 10px;
+                            @include flex-item(row, center, flex-start, nowrap);
+
+                            .icon-container {
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 5px;
+                                @include flex-item;
+
+                                .icon-gi-lockers {
+                                    font-size: 1.5em;
+                                    color: $app-green-color;
+                                }
+                            }
+                            .locker-bank-name {
+                                color : $app-dark-purple-color;
+                            }
+                        }
+
+                        .locker-bank-location-container {
+                            width: 100%;
+                            margin-bottom: 10px;
+                            @include flex-item(row, center, flex-start, nowrap);
+
+                            .icon-container {
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 5px;
+                                @include flex-item;
+
+                                .icon-md-location-on {
+                                    font-size: 1.5em;
+                                    color: $app-green-color;
+                                }
+                            }
+                            .locker-bank-location {
+                                color : $app-dark-purple-color
+                            }
+                        }
+
+                        .booking-duration-container {
+                            width: 100%;
+                            margin-bottom: 10px;
+                            @include flex-item(row, center, flex-start, nowrap);
+
+                            .icon-container {
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 5px;
+                                @include flex-item;
+
+                                .icon-io-time {
+                                    font-size: 1.5em;
+                                    color: $app-green-color;
+                                }
+                            }
+
+                            .booking-duration {
+                                color : $app-dark-purple-color
+                            }
+                        }
+
+                        .remaining-time-container {
+                            width: 100%;
+                            margin-bottom: 10px;
+                            @include flex-item(row, center, flex-start, nowrap);
+
+                            .icon-container {
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 5px;
+                                @include flex-item;
+
+                                .icon-io-timer {
+                                    font-size: 1.5em;
+                                    color: $app-green-color;
+                                }
+                            }
+
+                            .remaining-time{
+                                color : $app-dark-purple-color
+                            }
+                        }
+
+                        .remaining-grace-time-container {
+                            width: 100%;
+                            margin-bottom: 10px;
+                            @include flex-item(row, center, flex-start, nowrap);
+
+                            .icon-container {
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 5px;
+                                @include flex-item;
+
+                                .icon-io-timer {
+                                    font-size: 1.5em;
+                                    color: $app-green-color;
+                                }
+                            }
+                        }
+
+                        .remaining-time-and-overstay-time-container {
+                            width: 100%;
+                            margin-bottom: 10px;
+                            @include flex-item(row, center, space-between, nowrap);
+
+                            .remaining-time-container {
+                                width: 100%;
+                                margin: 0 10px 0 0;
+                                @include flex-item(row, center, flex-start, nowrap);
+
+                                .icon-container {
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 5px;
+                                    @include flex-item;
+
+                                    .icon-io-timer {
+                                        font-size: 1.5em;
+                                        color: $app-green-color;
+                                    }
+                                }
+                            }
+
+                            .overstay-time-container {
+                                width: 100%;
+                                @include flex-item(row, center, flex-end, nowrap);
+
+                                .icon-container {
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 5px;
+                                    @include flex-item;
+
+                                    .icon-md-more-time {
+                                        font-size: 1.5em;
+                                        color: $app-bittersweet-color;
+                                    }
+                                }
+
+                                .overstay-time {
+                                    margin-right: 10px;
+                                    color: $app-bittersweet-color;
+                                }
+                            }
+                        }
+
+                        .warning-message-container {
+                            width: 100%;
+                            padding: 10px;
+                            @include item-border;
+                            border-radius: 5px;
+                            margin-bottom: 20px;
+                            @include flex-item;
+                            background-color: $app-lavender-grey-color;
+
+                            .warning-message {
+                                width: 100%;
+                                font-size: 0.9em;
+                                color: $app-dark-purple-color;
+                            }
+
+                            &.overstay-warning {
+                                background-color: $app-bittersweet-color;
+
+                                .warning-message {
+                                    color: $app-white-color;
+                                }
+                            }
+                        }
+
+                        .overstay-pay-button {
+                            @include primary-button;
+                        }
+
+                        .slide-button {
+                            @include item-border(1px, solid, $app-tea-green-color, 5px);
+                            background-color: $app-tea-green-color;
+
+                            .slide-button-overlay {
+                                border-radius: 5px;
+                                background-color: $app-yellow-green-color;
+
+                                .slide-button-caret {
+                                    border-radius: 5px;
+                                    background-color: $app-green-color;
+
+                                    #chevrons-right {
+                                        width: 2em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .warning-message {
+                    @include flex-item;
+                    color: $app-grey-color;
+                }
+            }
+
+            .error-message {
+                margin-bottom: 2em;
+                text-align: center;
+                color: $app-bittersweet-color;
+            }
+
+            .try-again-button {
+                @include primary-button;
+                @include flex-item;
+            }
+
+            .book-another-locker-button {
+                @include primary-button;
+
+                &.disabled-button {
+                    @include disabled-button;
+                }
+            }
+        }
+    }
+
+    .info-row {
+        width: 100%;
+        padding: 5px 0;
+        @include flex-item(row, flex-start, space-between, nowrap);
+    
+        .title {
+            color: $app-grey-color;
+            font-size: large;
+        }
+    
+        .value {
+            color: $app-dark-purple-color;
+        }
+    }
+
+    .qr-code-reader-container {
+        width: 100%;
+        max-width: $max-content-width;
+        padding: 20px;
+
+        .qr-code-reader {
+            width: 100%;
+        }
+    }
+}
+
+.css-ypiqx9-MuiDialogContent-root {
+    background-color : $app-white-color;
+}
+
+.css-knqc4i-MuiDialogActions-root {
+    background-color: $app-white-color;
+}
+
+.react-modal-overlay.payment-confirmation-modal-overlay {
+    padding: 0 20px;
+    @include flex-item(column, center, center);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #A0A0A088;
+    backdrop-filter: blur(5px);
+
+    .react-modal.payment-confirmation-modal {
+        width: 100%;
+        max-width: $max-content-width;
+        padding: 40px 20px;
+        border-radius: 5px;
+        background-color: $app-white-color;
+
+        .payment-confirmation-modal-content {
+            width: 100%;
+
+            .payment-info {
+                width: 100%;
+                margin-bottom: 2em;
+
+            }
+
+            .buttons-container {
+                width: 100%;
+                @include flex-item(row, center, space-between, nowrap);
+
+                .cancel-button {
+                    margin-right: 20px;
+                    @include primary-button($app-bittersweet-color, $app-english-vermillion-color, $app-white-color);
+                    @include flex-item;
+                }
+
+                .pay-button {
+                    @include primary-button;
+                    @include flex-item;
+                }
+            }
+        }
+    }
+}
+
+.react-modal-overlay.qr-code-reader-modal-overlay {
+    @include flex-item(column, center, center);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    .react-modal.qr-code-reader-modal {
+        width: 100%;
+        height: 100%;
+        outline: none;
+        @include flex-item(column, center, center);
+        background-color: #20202088;
+        backdrop-filter: blur(5px);
+
+        .qr-code-reader-container {
+            width: 100%;
+            max-width: $max-content-width;
+            padding: 20px;
+
+            .qr-code-reader {
+                width: 100%;
+
+                section {
+                    border-radius: 5px;
+
+                    div {
+                        box-shadow: $app-yellow-green-color 0px 0px 0px 2px inset !important;
+                    }
+                }
+            }
+
+            .button-container {
+                width: 100%;
+                margin: 2em 0;
+
+                .cancel-button {
+                    @include primary-button($app-bittersweet-color, $app-english-vermillion-color, $app-white-color);
+                }
+            }
+        }
+    }
+}
+
+
+

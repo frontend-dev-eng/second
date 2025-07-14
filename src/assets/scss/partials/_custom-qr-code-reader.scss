@@ -1,0 +1,33 @@
+.qr-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    .qr-code-reader {
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+
+    .camera-frame-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex; 
+        color: $app-white-color;
+        text-align: center;
+        margin-top: 10px;
+        padding: 2px;
+    }
+
+      .custom-finder {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 200px; 
+        width: 200px;
+      }
+}

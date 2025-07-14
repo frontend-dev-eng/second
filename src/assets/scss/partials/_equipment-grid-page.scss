@@ -1,0 +1,62 @@
+.equipment-grid-page {
+    @include page-element-dimensions;
+    @include flex-item(column, center, space-between);
+
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            @include flex-item(column);
+
+            .welcome-heading {
+                align-self: flex-start;
+                @include app-heading-2(var(--primary-text-color),var(--primary-font-bold));
+            }
+
+            .choose-and-rent-text {
+                margin-top: 4px;
+                @include app-text(var(--tertiary-text-color));
+            }
+
+            .equipment-category {
+                width: 100%;
+                margin-top: 24px;
+
+                .category-title {
+                    @include app-heading($app-dark-purple-color, 20px,var(--primary-font-bold));
+                }
+            }
+
+            .no-product-warning-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+
+                .no-product-warning-text {
+                    font-size: toRem(18);
+                    font-family: var(--primary-font-regular);
+                    padding-top: 57px;
+                    padding-bottom: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .equipment-grid-page {
+        .main-container {
+            .main {
+                padding: 40px 16px;
+
+                .choose-and-rent-text {
+                    @include app-text(var(--tertiary-text-color), 14px);
+                }
+            }
+        }
+    }
+}

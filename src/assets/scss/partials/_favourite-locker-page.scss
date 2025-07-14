@@ -1,0 +1,7 @@
+.favourite-locker-page {
+    @include page-element-dimensions;
+    @include main-element-dimensions
+    // @include flex-item(column, center);
+
+  
+}

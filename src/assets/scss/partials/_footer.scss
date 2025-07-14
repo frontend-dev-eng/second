@@ -1,0 +1,24 @@
+.footer-style {
+    position: fixed;
+    bottom: 0;
+    @include flex-item;
+    z-index: 1;
+    background-color: var(--footer-style-bg-color);
+    border-radius: 22px 22px 0px 0px;
+    max-width: $max-content-width !important;
+
+    .footer {
+        @include footer-element-dimensions;
+        @include flex-item; 
+
+        .language-selector-dropdown-container {
+            width: 100%;
+            @include flex-item;
+
+            .title.language-selector-dropdown-title {
+                margin-right: 1em;
+                color: $app-dark-purple-color;
+            }
+        }
+    }
+}

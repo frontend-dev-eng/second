@@ -1,0 +1,47 @@
+.badge-container {
+    display: flex;
+    flex-direction: column;
+
+    .content-view {
+        display: flex;
+        flex-direction: row;
+
+        .badge {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: $app-light-pink-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            box-shadow: 0px 4px 4px 0px #00000040;
+
+            .badge-content {
+                font-family: var(--primary-font-medium);
+                font-size: toRem(14);
+                font-weight: 500;
+                line-height: 16.94px;
+                text-align: center;
+            }
+        }
+
+        .primary-text {
+            font-family: var(--primary-font-medium);
+            font-size: toRem(14);
+            font-weight: 500;
+            line-height: 16.94px;
+            text-align: left;
+            margin-bottom: 2px;
+            margin-top: 4px;
+        }
+
+        .secondary-text {
+            font-family: var(--primary-font-regular);;
+            font-size: toRem(10);
+            font-weight: 400;
+            line-height: 12.1px;
+            text-align: left;
+        }
+    }
+}

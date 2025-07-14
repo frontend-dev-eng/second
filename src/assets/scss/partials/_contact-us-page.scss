@@ -1,0 +1,14 @@
+.contact-us-page{
+    @include page-element-dimensions;
+
+    .main-container{
+        width: 100%;
+        @include flex-item;
+        .main{
+            @include main-element-dimensions;
+
+            @include flex-item(column);
+            
+        }
+    }
+}

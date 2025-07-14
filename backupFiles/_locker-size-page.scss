@@ -1,0 +1,562 @@
+/*
+.locker-size-page {
+    @include page-element-dimensions;
+    @include flex-item(column, center, space-between);
+
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            @include flex-item(column);
+
+
+            .locker-size-form-heading {
+                font-size: 1em;
+                color: $app-grey-color;
+                text-align: left;
+            }
+
+            .locker-size-form {
+                width: 100%;
+                margin: 2em 0em;
+
+                .form-item {
+                    width: 100%;
+                    border-radius: 5px;
+                    margin-bottom: 2em;
+                    background-color: $app-tea-green-color;
+                    @include flex-item(column, center, flex-start);
+
+                    .form-label {
+                        @include primary-button($app-yellow-green-color, $app-green-color);
+
+                        .form-input {
+                            display: none;
+                        }
+                    }
+
+                    .selected {
+                        background-image: linear-gradient($app-green-color, $app-yellow-green-color) !important;
+                    }
+
+                    .blurred{
+                        opacity: 0.5;
+                    }
+
+                    .booking-period-form {
+                        width: 100%;
+                        padding: 0px 20px 20px;
+
+                        .locker-price, .booking-period, .total-amount {
+                            margin-top: 20px;
+                            @include flex-item(row, center, space-between);
+
+                            .title, .value {
+                                color: $app-dark-purple-color;
+                            }
+                        }
+
+                        .booking-start-and-end-times {
+                            margin-top: 0.25em;
+                            @include flex-item(row, center, flex-end);
+
+                            .value {
+                                color: $app-dark-purple-color;
+                            }
+
+                            .booking-duration-warning {
+                                color: $app-bittersweet-color;
+                            }
+                        }
+
+                        .booking-period {
+                            .form-input {
+                                width: 50%;
+                                padding: 8px;
+                                @include item-border(1px, solid, $app-light-grey-color, 5px);
+                            }
+
+                            .input-duration {
+                                background-color: $app-white-color;
+                                width: 300px;
+                                margin-left: 2em;
+                            }
+                        }
+                    }
+                }
+            }
+            }
+    }
+}
+
+.info-row {
+    width: 100%;
+    padding: 5px 0;
+    @include flex-item(row, flex-start, space-between, nowrap);
+
+    .title {
+        color: $app-grey-color;
+    }
+
+    .value {
+        color: $app-dark-purple-color;
+        font-size: 1rem;
+
+        &.booking-duration-value {
+            @include flex-item(column, flex-end, flex-start, nowrap);
+        }
+    }
+}
+*/
+
+// .locker-size-page {
+//     @include page-element-dimensions;
+//     height: auto !important;
+//     min-height: 100vh;
+//     padding-bottom: 100px;
+//     @include flex-item(column, center, space-between);
+
+//     .main-container {
+//         width: 100%;
+//         @include flex-item;
+
+//         .main {
+//             @include main-element-dimensions;
+//             padding-top: 0;
+//             @include flex-item(column);
+
+//             .locker-size-list {
+//                 width: 100%;
+//                 // margin: 2em 0;
+//                 @include flex-item(column, center);
+
+//                 .locker-size.accordion {
+//                     width: 100%;
+//                     border: 1px solid #B9E06644;
+//                     border-radius: var(--btn-border-radius);
+//                     // @include primary-button;
+//                     @include flex-item(column);
+//                     padding: 0;
+//                     margin-bottom: 2em;
+//                     background-color: #B9E06622;
+
+//                     &:last-child {
+//                         margin-bottom: 0;
+//                     }
+
+//                     .accordion-header {
+//                         @include primary-button;
+//                         @include flex-item(column, center);
+//                         position: relative;
+
+//                         .size-name {
+//                             font-size: 1.2rem;
+//                             text-transform: capitalize;
+//                         }
+
+//                         .units-available {
+//                             text-transform: capitalize;
+//                         }
+
+//                         .icon-container {
+//                             @include flex-item;
+//                             position: absolute;
+//                             right: 20px;
+
+//                             .accordion-icon {
+//                                 font-size: 2rem;
+//                             }
+//                         }
+//                     }
+
+//                     .accordion-details {
+//                         width: 100%;
+//                         padding: 10px;
+//                         // border: 1px solid red;
+//                         // border-bottom-left-radius: var(--btn-border-radius);
+//                         // border-bottom-right-radius: var(--btn-border-radius);
+//                         // background-color: #B9E066;
+
+//                         .heading {
+//                             text-align: center;
+//                             // color: white;
+//                         }
+
+//                         .table-header-row {
+//                             padding: 4px 0;
+//                             // border: 1px solid red;
+//                             margin: 4px 0;
+//                             @include flex-item(row, center, space-between);
+
+//                             .duration-heading {
+//                                 padding-left: 56px;
+//                             }
+
+//                             .price-heading {
+//                                 padding-right: 16px;
+//                             }
+//                         }
+
+//                         .table-info-row {
+//                             padding: 12px 0;
+//                             border: 1px solid lightgrey;
+//                             border-radius: 8px;
+//                             margin: 8px 0;
+//                             @include flex-item(row, center, space-between);
+
+//                             &.selected {
+//                                 background-color: #B9E066;
+//                             }
+
+//                             &:last-child {
+//                                 margin-bottom: 0;
+//                             }
+
+//                             .icon-and-duration {
+//                                 @include flex-item(row, center, flex-start);
+
+//                                 .radio-icon {
+//                                     width: 56px;
+//                                     @include flex-item;
+//                                 }
+
+//                                 .slot-duration {
+//                                     // padding-left: 16px;
+//                                     font-size: 1.2rem;
+//                                 }
+//                             }
+
+//                             .slot-price {
+//                                 padding-right: 16px;
+//                                 font-size: 1.2rem;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+
+//             .book-button-container {
+//                 width: 50%;
+//                 margin: 16px 0;
+
+//                 // #book-button
+//             }
+
+//             .booking-instructions {
+//                 width: 100%;
+//                 padding: 16px 0;
+//                 border-top: 1px solid lightgrey;
+
+//                 .heading {
+//                     margin-bottom: 10px;
+//                     font-size: 1.4em;
+//                     text-align: center;
+//                 }
+
+//                 .instructions-list {
+//                     .list-item {
+//                         margin-bottom: 10px;
+//                         background-color: transparent;
+
+//                         .icon-container {
+//                             min-width: auto;
+//                             padding-right: 16px;
+
+//                             .circle-icon {
+//                                 font-size: 14px;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// #booking-confirmation-modal {
+//     .MuiDialogContent-root {
+//         padding-bottom: 0;
+
+//         .modal-content {
+//             .booking-details {
+//                 padding-top: 20px;
+//                 border-top: 1px solid lightgrey;
+
+//                 .info-row {
+//                     margin-bottom: 20px;
+//                     @include flex-item(row, center, space-between);
+
+//                     &:last-child {
+//                         margin-bottom: 0;
+//                     }
+
+//                     .left-column {
+//                         font-size: 1.2em;
+//                         text-align: left;
+//                     }
+
+//                     .right-column {
+//                         font-size: 1.4em;
+//                         text-align: right;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+.app{
+    .locker-size-page {
+        @include page-element-dimensions;
+        height: auto !important;
+        min-height: 100vh;
+        padding-bottom: 100px;
+        @include flex-item(column, center, space-between);
+
+    .main-container {
+        width: 100%;
+        //@include flex-item;
+        padding: 0px 20px;
+        .main {
+            @include main-element-dimensions;
+           // padding-top: 0;
+           @include flex-item(column);
+
+
+           // this is for Instructions section style 
+
+            .booking-instructions {
+            width: 100%;
+            padding: 16px 0;
+
+            .heading {
+                margin-bottom: 16px;
+                text-align: center;
+                font-family: "Manrope";
+                font-weight: var(--font-weight-semibold);
+                font-size: var(--font-size-heading-2-regular);
+                color: var(--color-charcoal);
+            }
+
+            .instruction-item {
+                display: flex;
+                align-items: flex-start;
+                gap: 8px;
+                margin-bottom: 14px;
+            }
+
+            .bullet {
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: var(--color-charcoal);
+                margin-top: 8px; 
+                flex-shrink: 0;
+                opacity: 0.7;
+            }
+
+            .instruction-text {
+                line-height: 1.6;
+                font-family: var(--primary-font);
+                font-weight: var(--font-weight-regular);
+                font-size: var(--font-size-body-text-regular);
+                color: var(--color-charcoal);
+                opacity: 0.7;
+
+                .check-link {
+                color: #4CAF50;
+                text-decoration: underline;
+                display: inline-block;
+                margin-top: 4px;
+                }
+            }
+            }
+
+            // this is for locker list style
+
+            .locker-size-list {
+                width: 100%;
+                margin: 1.5em 0;
+                @include flex-item(column, center);
+
+                .locker-size.accordion {
+                    width: 100%;
+                    border: 4px solid rgba(211, 233, 173, 1);
+                    //border-radius: var(--btn-border-radius-luggege);
+                    // @include primary-button;
+                    border-radius: 20px;
+                    @include flex-item(column);
+                    padding: 0;
+                    margin-bottom: 2em;
+                    background-color: #a8e12c22;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    .accordion-header {
+                        @include primary-button;
+                        @include flex-item(column, center);
+                        border-radius: 20px;
+                        position: relative;
+                        background-color: rgba(124, 173, 53, 1);
+                        .size-name {
+                            font-size: 1.2rem;
+                            text-transform: capitalize;
+                        }
+
+                        .units-available {
+                            text-transform: capitalize;
+                        }
+
+                        .icon-container {
+                            @include flex-item;
+                            position: absolute;
+                            right: 20px;
+
+                            .accordion-icon {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+
+                    .accordion-details {
+  width: 100%;
+  padding: 12px 16px;
+
+  .table-header-row {
+    padding: 6px 0;
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 1rem;
+    @include flex-item(row, center, space-between);
+
+    .duration-heading {
+      padding-left: 36px;
+    }
+
+    .price-heading {
+      padding-right: 8px;
+    }
+  }
+
+  .table-info-row {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+    @include flex-item(row, center, space-between);
+
+    &.selected {
+      background-color: #d9efb4; // Light green highlight
+    }
+
+    .icon-and-duration {
+      @include flex-item(row, center, flex-start);
+
+      .radio-icon {
+        width: 40px;
+        @include flex-item;
+      }
+
+      .slot-duration {
+        font-size: 1rem;
+      }
+    }
+
+    .slot-price {
+      padding-right: 10px;
+      font-size: 1rem;
+    }
+  }
+
+  .locker-footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    @include flex-item(row, center, space-between);
+
+    .locker-footer-label {
+      font-weight: 500;
+      opacity: 0.6;
+    }
+
+    .locker-stepper {
+      display: flex;
+      align-items: center;
+      background-color: #e8f5d4;
+      border-radius: 16px;
+      padding: 4px 10px;
+      gap: 10px;
+
+      button {
+        border: none;
+        background: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      span {
+        min-width: 20px;
+        text-align: center;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+                }
+            }
+
+            .book-button-container {
+                width: 50%;
+                margin: 16px 0;
+
+                // #book-button
+            }
+
+         
+
+
+        }
+    }
+}
+
+#booking-confirmation-modal {
+    .MuiDialogContent-root {
+        padding-bottom: 0;
+
+        .modal-content {
+            .booking-details {
+                padding-top: 20px;
+                border-top: 1px solid lightgrey;
+
+                .info-row {
+                    margin-bottom: 20px;
+                    @include flex-item(row, center, space-between);
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    .left-column {
+                        font-size: 1.2em;
+                        text-align: left;
+                    }
+
+                    .right-column {
+                        font-size: 1.4em;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
+
+}

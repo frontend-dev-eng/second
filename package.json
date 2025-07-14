@@ -1,0 +1,83 @@
+{
+  "name": "duroltpwa",
+  "version": "0.1.13",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.20",
+    "@mui/material": "^5.15.18",
+    "@react-pdf/renderer": "^4.1.6",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@yudiel/react-qr-scanner": "^2.0.4",
+    "axios": "^1.7.2",
+    "crypto-js": "^4.1.1",
+    "env-cmd": "^10.1.0",
+    "framer-motion": "^11.2.9",
+    "i18next": "^21.10.0",
+    "i18next-browser-languagedetector": "^7.1.0",
+    "i18next-http-backend": "^2.2.1",
+    "js-sha512": "^0.8.0",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.45",
+    "react": "^18.2.0",
+    "react-countdown": "^2.3.6",
+    "react-countup": "^6.5.3",
+    "react-device-detect": "^2.2.3",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^11.18.6",
+    "react-icons": "^4.12.0",
+    "react-input-mask": "^2.0.4",
+    "react-ipgeolocation": "^1.4.0",
+    "react-modal": "^3.16.1",
+    "react-modal-sheet": "^3.1.0",
+    "react-phone-input-2": "^2.15.1",
+    "react-qr-reader": "^2.2.1",
+    "react-router-dom": "^5.3.4",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.7.7",
+    "react-slide-button": "^2.0.0",
+    "react-social-login-buttons": "^4.1.0",
+    "react-timer-hook": "^3.0.8",
+    "react-toastify": "^9.1.3",
+    "reactjs-social-login": "^2.6.3",
+    "swiper": "^11.1.10",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "sass": "sass src/assets/scss/main.scss:src/assets/css/main.css src/assets/scss/durolt.scss:public/assets/css/durolt.css --no-source-map",
+    "deploytest": "env-cmd -f .env.demo react-scripts build && aws --profile pwa-deploy-user --region ap-south-1 s3 sync ./build s3://pwadev",
+    "deploydev": "env-cmd -f .env.dev react-scripts build && aws --profile pwa-deploy-user --region ap-south-1 s3 sync ./build s3://app.durolt.in",
+    "deploydemo": "env-cmd -f .env.demo react-scripts build && aws --profile pwa-deploy-user --region ap-south-1 s3 sync ./build s3://appdemo.durolt.in",
+    "deploypwademo": "env-cmd -f .env.dev react-scripts build && aws --profile pwa-deploy-user --region ap-south-1 s3 sync ./build s3://luggagedemo",
+    "deployprod": "env-cmd -f .env.prod react-scripts build && aws --profile pwa-deploy-user --region ap-south-1 s3 sync ./build s3://app.durolt.com",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "ajv": "^7.2.4",
+    "sass": "^1.77.6"
+  }
+}

@@ -1,0 +1,40 @@
+.payment-details-page {
+    @include page-element-dimensions;
+    @include flex-item(column, center, space-between);
+    background-color: $app-ghost-white-color;
+
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            @include flex-item(column);
+        }
+    }
+}
+
+
+.custom-dialog-redirect {
+    .icon-container {
+        @include flex-item;
+
+        .icon-md-error {
+            font-size: 36px;
+            color: $app-english-vermillion-color;
+        }
+    }
+
+    .error-message {
+        margin-top: 18px;
+        font-size: 18px;
+        color: $app-english-vermillion-color;
+        text-align: center;
+    }
+
+    .redirection-message {
+        margin-top: 18px;
+        color: $app-grey-color;
+        text-align: center;
+    }
+}

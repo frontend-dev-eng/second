@@ -1,0 +1,25 @@
+.organisation-list-page {
+    @include main-element-dimensions;
+    @include page-element-dimensions;
+
+    .box-container {
+        display :flex;
+        flex-direction : column;
+        justify-content : space-between;
+        height : 100%;
+        margin-bottom: 20px;
+    }
+
+    .listItem {
+        width: 100%;
+        background-color : $app-white-color;
+        padding-block : 15px;
+        border-radius : 8px;
+    }
+
+    .itemTitle {
+        margin-left: 20px;
+        font-size : 20px;
+        font-family: var(--primary-font-regular);
+    }
+}

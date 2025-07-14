@@ -1,0 +1,15 @@
+.back-header{
+    .main-container{
+        width: 100%;
+        @include flex-item;
+
+        .main{
+            @include main-element-dimensions;
+            padding:0px;
+
+            .back-header-container {
+                padding: 10px 0px 0px 10px;
+            }
+        }
+    }
+}

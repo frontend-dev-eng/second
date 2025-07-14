@@ -1,0 +1,62 @@
+.locker-layout-page {
+    @include page-element-dimensions;
+
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            @include flex-item(column);
+
+            .list-header {
+                position: relative;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 30px;
+
+                .lockerView {
+                    color: $app-yellow-green-color;
+                    font-size: 13px;
+                    line-height: 15px;
+                    font-family: var(--primary-font-semibold);
+                    padding-bottom: 16px;
+                }
+            }
+
+            .responsiveImageStyle {
+                width: 100%;
+
+                .content {
+                    background-color: #ECE9F1;
+                    border-color: $app-lavender-grey-color;
+                    border-width: 1px;
+                }
+            }
+
+            .flexRow {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 25px;
+                padding: 10px;
+                margin-top: 20px;
+                
+                .colorStatus {
+                    width: 20px;
+                    height: 20px;
+                    background-color: $app-white-color;
+                }
+
+                .availableText {
+                    font-size: 15px;
+                    font-family: var(--primary-font-regular);;
+                    padding-left: 12px;
+                }
+            }
+        }
+    }
+}

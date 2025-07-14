@@ -1,0 +1,24 @@
+.custom-dialog {
+
+    .dialog-title {
+        text-align: center;
+        font-family: var(--primary-font-medium);
+    }
+
+    .dialog-content-text {
+        font-size: toRem(16);
+        text-align: center;
+        padding-bottom: 1em;
+        font-family: var(--primary-font-regular);
+        color: var(--primary-text-color);
+    }
+
+    .cancel-button {
+        border: 1px solid var(--btn-outlined-border-color);
+        width: 100%;
+        padding: 10px 35px;
+        border-radius: var(--btn-border-radius);
+        @include app-text(var(--primary-text-color), 15px, var(--primary-font-medium));
+        text-transform: capitalize;
+    }
+}

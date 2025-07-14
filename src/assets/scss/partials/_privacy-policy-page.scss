@@ -1,0 +1,13 @@
+.privacy_policy_page {
+    @include page-element-dimensions;
+
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include flex-item(column);
+
+        }
+    }
+}

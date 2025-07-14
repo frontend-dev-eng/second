@@ -1,0 +1,42 @@
+.main-header-page {
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            padding: 0;
+            .header {
+                display: flex;
+                flex-direction:row;
+                align-items: center;
+                background-color: $app-white-color;
+                justify-content: space-between;
+                padding: 15px;
+                box-shadow: 0px 5px 15px 0px #00000014;
+
+                &.dark-header {
+                    background-color: $app-dark-purple-color;
+                }
+            }
+
+            .header-contain {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+
+              .header-content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+              }
+            
+            .logo {
+                width:86px;
+                height: 32px;
+            }
+        }
+    }
+}

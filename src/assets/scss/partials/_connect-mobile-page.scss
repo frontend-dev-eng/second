@@ -1,0 +1,21 @@
+.connect-mobile-page {
+    @include page-element-dimensions;
+    @include flex-item(column, center);
+
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            @include flex-item(column);
+
+            .container {
+                flex: 1;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+        }
+    }
+}

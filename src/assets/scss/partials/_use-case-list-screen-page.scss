@@ -1,0 +1,14 @@
+.assignment-selection-page{
+    @include page-element-dimensions;
+    @include flex-item(column, center, flex-start);
+
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            @include flex-item(column);
+        }
+    }
+}

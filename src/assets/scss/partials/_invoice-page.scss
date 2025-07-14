@@ -1,0 +1,85 @@
+.invoice-page {
+    @include page-element-dimensions;
+    @include flex-item(column, center, flex-start);
+
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            @include flex-item(column);
+
+            .invoice-details-heading {
+                @include app-heading-2(var(--primary-text-color), var(--primary-font-bold));
+            }
+
+            .invoice-details-text {
+                margin-top: 4px;
+                @include app-text(var(--tertiary-text-color));
+            }
+
+            .invoice-details {
+                width: 100%;
+                @include item-border(1px, solid, $app-light-grey-color, 8px);
+                margin: 1.5em;
+
+                .invoice-details-section {
+                    width: 100%;
+                    padding: 1.5em;
+                    border-bottom: 1px solid $app-light-grey-color;
+                    @include flex-item(column, center, flex-start);
+
+                    &.section-1 {
+                        .app-logo {
+                            width: 48px;
+                            margin-bottom: 1.5em;
+                        }
+                    }
+
+                    .invoice-details-grid-container {
+                        .grid-item {
+                            margin-bottom: 1.5em;
+
+                            &:nth-last-child(2), &:last-child {
+                                margin-bottom: 0px;
+                            }
+
+                            &.right {
+                                padding-left: 1.5em;
+                            }
+                        }
+                    }
+
+                    &.section-3 {
+                        @include flex-item;
+
+                        .social-media-icon {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 100%;
+                            margin-right: 0.5em;
+                            background-color: $app-light-grey-color;
+
+                            &:last-child {
+                                margin-right: 0px;
+                            }
+                        }
+                    }
+
+                    &.section-4 {
+                        border-bottom: 0px;
+
+                        .thank-you-heading {
+                            @include app-heading-2(var(--primary-text-color), var(--primary-font-bold));
+                        }
+
+                        .company-name {
+                            @include app-text(var(--tertiary-text-color));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

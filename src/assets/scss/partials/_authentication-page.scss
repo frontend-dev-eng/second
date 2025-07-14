@@ -1,0 +1,235 @@
+.authentication-page {
+    @include page-element-dimensions;
+    @include flex-item(column, center, space-between);
+
+    &.send-otp-ui {
+        background-color: $app-white-color;
+    }
+
+    &.verify-otp-ui {
+        background-color: $app-ghost-white-color;
+    }
+
+    .header-container {
+        width: 100%;
+        @include flex-item;
+        background-color: $app-white-color;
+
+        .header {
+            @include header-element-dimensions;
+            
+            &.send-otp-ui {
+                @include flex-item;
+
+                img.durolt-logo {
+                    width: auto;
+                    height: 4em;
+                    margin: 2.5em;
+                }
+            }
+
+            &.verify-otp-ui {
+                height: 3.5em;
+                @include flex-item(row, center, flex-start);
+                position: relative;
+
+                .back-button.icon-container {
+                    @include flex-item;
+                    position: absolute;
+                    left: 10px;
+                    cursor: pointer;
+
+                    .icon-md-chevron-left {
+                        font-size: 1.8em;
+                        color: $app-dark-purple-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            @include flex-item(column);
+
+            .send-otp-form {
+                width: 100%;
+                @include flex-item(column, flex-start, center);
+
+                .labels-container {
+                    width: 100%;
+                    @include flex-item(row, center, space-between);
+
+                    .form-label {
+                        width: 48%;
+                        padding: 0.5em;
+                        border-bottom: 2px solid transparent;
+                        margin-bottom: 2em;
+                        font-size: 1em;
+                        color: $app-grey-color;
+                        text-align: center;
+
+                        &.selected-login-option {
+                            border-bottom: 2px solid $app-yellow-green-color;
+                        }
+                    }
+                }
+
+                .label-container {
+                    width: 100%;
+                    margin-bottom: 2em;
+                    
+                    .form-label {
+                        width: 100%;
+                        font-size: 1em;
+                        color: $app-grey-color;
+                        text-align: left;
+                    }
+                }
+
+                .country-code-selector-and-mobile-number-input-container {
+                    width: 100%;
+                    @include flex-item(row, center, space-between);
+                    @include item-border(1px, solid, $app-light-grey-color, 5px);
+
+                    .react-select.country-code-selector {
+                        width: 30%;
+                        font-size: 1em;
+
+                        div.country-code-selector__control {
+                            border-width: 0px 1px 0px 0px;
+                            border-radius: 0px;
+                            
+                            div.country-code-selector__indicators {
+                                span.country-code-selector__indicator-separator {
+                                    display: none;
+                                }
+
+                                div.country-code-selector__indicator {
+                                    padding-left: 0px;
+                                }
+                            }
+                        }
+
+                        div.country-code-selector__menu {
+                            border-radius: 0px;
+
+                            div.country-code-selector__menu-list {
+                                padding: 0px;
+
+                                div.country-code-selector__option {
+                                    word-wrap: break-word;
+
+                                    &.country-code-selector__option--is-selected {
+                                        background-color: $app-green-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .send-otp-button {
+                    @include primary-button;
+                    @include flex-item;
+                    margin-top: 2em;
+                    cursor: pointer;
+
+                    #rotating-loading-icon {
+                        width: 1.3em;
+                    }
+                }
+            }
+
+            .verify-otp-form {
+                width: 100%;
+                margin-bottom: 1.0em;
+                @include flex-item(column, flex-start, center);
+
+                .form-label {
+                    padding: 0.5em 0;
+                    margin-bottom: 1em;
+                    font-size: 1em;
+                    color: $app-grey-color;
+                    text-align: left;
+                }
+
+                .verify-otp-button {
+                    @include primary-button;
+                    @include flex-item;
+                    cursor: pointer;
+
+                    #rotating-loading-icon {
+                        width: 1.3em;
+                    }
+                }
+            }
+
+            .form-input {
+                width: 100%;
+                padding: 8px;
+                @include item-border(1px, solid, $app-light-grey-color, 5px);
+                font-size: 1em;
+
+                &.mobile-number-input {
+                    width: 70%;
+                    border-width: 0px;
+                }
+            }
+
+            .resend-otp-button {
+                margin: 1.5em 0 1.6em 0;
+                align-self: center;
+                @include tertiary-button($app-green-color, none);
+            }
+
+            .countdown-timer {
+                margin: 1.5em 0 1.6em 0;
+                align-self: center;
+                color: $app-lavender-grey-color;
+            }
+
+            .otp-and-otpless-login-divider {
+                width: 100%;
+                height: 80px;
+                @include flex-item(row, center, space-between);
+
+                .divider-line {
+                    width: 44%;
+                    border-top: 1px solid $app-light-grey-color;
+                }
+
+                .or-text {
+                    margin: 0px 10px;
+                    font-size: 1em;
+                    color: $app-grey-color;
+                    vertical-align: middle;
+                }
+            }
+
+            .otpless-login-page-container {
+                width: 100%;
+
+                .otpless-button {
+                    display: block;
+                    @include primary-button;
+                    text-decoration: none;
+                }
+            }
+
+            .link-my-phone-button {
+                @include primary-button;
+                @include flex-item;
+                cursor: pointer;
+            }
+        }
+    }
+
+    // .footer-container {
+    //     @include footer-style;
+    // }
+}

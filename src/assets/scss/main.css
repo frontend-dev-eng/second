@@ -1,0 +1,2672 @@
+.react-modal-overlay.user-modal-overlay {
+  padding: 3.6em 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(160, 160, 160, 0.5333333333);
+  backdrop-filter: blur(5px);
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal {
+  max-width: 480px;
+  padding: 40px 20px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content {
+  width: 100%;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .user-information-and-navigation-options {
+  width: 100%;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .user-information-and-navigation-options .user-information {
+  width: 100%;
+  height: 3.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .user-information-and-navigation-options .user-information .icon-container.user-icon-container {
+  width: 3.5em;
+  margin-right: 20px;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .user-information-and-navigation-options .user-information .icon-container.user-icon-container .icon-md-account-circle {
+  width: 100%;
+  height: 100%;
+  color: #1A051D;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .user-information-and-navigation-options .user-information .email-and-phone-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .user-information-and-navigation-options .user-information .email-and-phone-container .user-email-container {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .user-information-and-navigation-options .user-information .email-and-phone-container .user-email-container .icon-container {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .user-information-and-navigation-options .user-information .email-and-phone-container .user-email-container .icon-container .icon-md-email {
+  color: #1A051D;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .user-information-and-navigation-options .user-information .email-and-phone-container .user-email-container .user-email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  color: #3F3356;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .user-information-and-navigation-options .user-information .email-and-phone-container .user-phone-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .user-information-and-navigation-options .user-information .email-and-phone-container .user-phone-container .icon-container {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .user-information-and-navigation-options .user-information .email-and-phone-container .user-phone-container .icon-container .icon-md-phone {
+  color: #1A051D;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .user-information-and-navigation-options .user-information .email-and-phone-container .user-phone-container .user-phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  color: #3F3356;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .user-information-and-navigation-options .line-divider {
+  width: 100%;
+  border-top: 1px solid #D3D3D3;
+  margin: 20px 0;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .user-information-and-navigation-options .navigation-options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .user-information-and-navigation-options .navigation-options .logout-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  cursor: pointer;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .user-information-and-navigation-options .navigation-options .logout-container .icon-container {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .user-information-and-navigation-options .navigation-options .logout-container .icon-container .icon-md-logout {
+  font-size: 1.5em;
+  color: #1A051D;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .user-information-and-navigation-options .navigation-options .logout-container .logout-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  color: #3F3356;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .logout-confirmation-message-container {
+  width: 100%;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .logout-confirmation-message-container .logout-confirmation-message {
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: #1A051D;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .logout-confirmation-message-container .buttons-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .logout-confirmation-message-container .buttons-container .cancel-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#FFFFFF, #FFFFFF);
+  text-align: center;
+  color: #1A051D;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+  padding: 9px;
+  border: 1px solid #669F00;
+  border-radius: 5px;
+  margin-right: 20px;
+  border-color: #1A051D;
+}
+.react-modal-overlay.user-modal-overlay .react-modal.user-modal .user-modal-content .logout-confirmation-message-container .buttons-container .logout-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#1A051D, #1A051D);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.home-page {
+  width: 100vw;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.home-page .header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.home-page .header-container .header {
+  width: 100%;
+  max-width: 480px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.home-page .header-container .header img.durolt-logo {
+  width: auto;
+  height: 4em;
+  margin: 2.5em;
+}
+.home-page .main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.home-page .main-container .main {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.home-page .main-container .main .loading-icon-container {
+  width: 3em;
+}
+.home-page .main-container .main .qr-code-reader-container {
+  width: 100%;
+}
+.home-page .main-container .main .qr-code-reader-container .qr-code-reader {
+  width: 100%;
+}
+.home-page .main-container .main .qr-code-reader-container .qr-code-reader section div {
+  box-shadow: #92C23E 0px 0px 0px 5px inset !important;
+}
+.home-page .main-container .main .qr-code-reader-container .buttons-container {
+  width: 100%;
+  margin: 2em 0;
+}
+.home-page .main-container .main .qr-code-reader-container .buttons-container .cancel-scan-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#FF6464, #C75252);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+}
+.home-page .main-container .main .locker-bank-information-and-login-button-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.home-page .main-container .main .locker-bank-information-and-login-button-container .locker-bank-information {
+  width: 100%;
+  margin-bottom: 4em;
+}
+.home-page .main-container .main .locker-bank-information-and-login-button-container .locker-bank-information .locker-bank-name-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.home-page .main-container .main .locker-bank-information-and-login-button-container .locker-bank-information .locker-bank-name-container .icon-container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.home-page .main-container .main .locker-bank-information-and-login-button-container .locker-bank-information .locker-bank-name-container .icon-container .icon-gi-lockers {
+  font-size: 1.5em;
+  color: #1A051D;
+}
+.home-page .main-container .main .locker-bank-information-and-login-button-container .locker-bank-information .locker-bank-name-container .locker-bank-name {
+  font-size: 1em;
+  color: #1A051D;
+}
+.home-page .main-container .main .locker-bank-information-and-login-button-container .locker-bank-information .locker-bank-location-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.home-page .main-container .main .locker-bank-information-and-login-button-container .locker-bank-information .locker-bank-location-container .icon-container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.home-page .main-container .main .locker-bank-information-and-login-button-container .locker-bank-information .locker-bank-location-container .icon-container .icon-md-location-on {
+  font-size: 1.5em;
+  color: #1A051D;
+}
+.home-page .main-container .main .locker-bank-information-and-login-button-container .locker-bank-information .locker-bank-location-container .locker-bank-location {
+  font-size: 1em;
+  color: #1A051D;
+}
+.home-page .main-container .main .locker-bank-information-and-login-button-container .locker-bank-information .information-message {
+  margin: 1em 0;
+  color: #1A051D;
+  text-align: center;
+}
+.home-page .main-container .main .locker-bank-information-and-login-button-container .locker-bank-information .scan-qr-code-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#1A051D, #1A051D);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+}
+.home-page .main-container .main .locker-bank-information-and-login-button-container .terms-and-conditions-form {
+  margin-bottom: 2em;
+}
+.home-page .main-container .main .locker-bank-information-and-login-button-container .terms-and-conditions-form input {
+  margin-right: 0.5em;
+}
+.home-page .main-container .main .locker-bank-information-and-login-button-container .terms-and-conditions-form .terms-and-conditions-page-link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.home-page .main-container .main .locker-bank-information-and-login-button-container .login-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#92C23E, #669F00);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+}
+.home-page .main-container .main .locker-bank-information-and-login-button-container .login-button:hover {
+  cursor: pointer;
+}
+.home-page .main-container .main .locker-bank-information-and-login-button-container .login-button.disabled-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#D3D3D3, #D3D3D3);
+  text-align: center;
+  color: #808080;
+  font-size: 1em;
+  cursor: not-allowed;
+  user-select: none;
+}
+.home-page .main-container .main .locker-bank-information-and-login-button-container .login-button.disabled-button:hover {
+  cursor: not-allowed;
+}
+.home-page .main-container .main .locker-bank-under-maintenance .error-message {
+  margin-bottom: 2em;
+  font-size: 1em;
+  color: #808080;
+  text-align: center;
+}
+.home-page .main-container .main .locker-bank-under-maintenance .try-again-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#92C23E, #669F00);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.authentication-page {
+  width: 100vw;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.authentication-page.send-otp-ui {
+  background-color: #FFFFFF;
+}
+.authentication-page.verify-otp-ui {
+  background-color: #F7F5F9;
+}
+.authentication-page .header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: #FFFFFF;
+}
+.authentication-page .header-container .header {
+  width: 100%;
+  max-width: 480px;
+  padding: 0px 20px;
+}
+.authentication-page .header-container .header.send-otp-ui {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.authentication-page .header-container .header.send-otp-ui img.durolt-logo {
+  width: auto;
+  height: 4em;
+  margin: 2.5em;
+}
+.authentication-page .header-container .header.verify-otp-ui {
+  height: 3.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.authentication-page .header-container .header.verify-otp-ui .back-button.icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: absolute;
+  left: 10px;
+  cursor: pointer;
+}
+.authentication-page .header-container .header.verify-otp-ui .back-button.icon-container .icon-md-chevron-left {
+  font-size: 1.8em;
+  color: #1A051D;
+}
+.authentication-page .main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.authentication-page .main-container .main {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.authentication-page .main-container .main .send-otp-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.authentication-page .main-container .main .send-otp-form .labels-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.authentication-page .main-container .main .send-otp-form .labels-container .form-label {
+  width: 48%;
+  padding: 0.5em;
+  border-bottom: 2px solid transparent;
+  margin-bottom: 2em;
+  font-size: 1em;
+  color: #808080;
+  text-align: center;
+}
+.authentication-page .main-container .main .send-otp-form .labels-container .form-label.selected-login-option {
+  border-bottom: 2px solid #92C23E;
+}
+.authentication-page .main-container .main .send-otp-form .label-container {
+  width: 100%;
+  margin-bottom: 2em;
+}
+.authentication-page .main-container .main .send-otp-form .label-container .form-label {
+  width: 100%;
+  font-size: 1em;
+  color: #808080;
+  text-align: left;
+}
+.authentication-page .main-container .main .send-otp-form .country-code-selector-and-mobile-number-input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  border: 1px solid #D3D3D3;
+  border-radius: 5px;
+}
+.authentication-page .main-container .main .send-otp-form .country-code-selector-and-mobile-number-input-container .react-select.country-code-selector {
+  width: 30%;
+  font-size: 1em;
+}
+.authentication-page .main-container .main .send-otp-form .country-code-selector-and-mobile-number-input-container .react-select.country-code-selector div.country-code-selector__control {
+  border-width: 0px 1px 0px 0px;
+  border-radius: 0px;
+}
+.authentication-page .main-container .main .send-otp-form .country-code-selector-and-mobile-number-input-container .react-select.country-code-selector div.country-code-selector__control div.country-code-selector__indicators span.country-code-selector__indicator-separator {
+  display: none;
+}
+.authentication-page .main-container .main .send-otp-form .country-code-selector-and-mobile-number-input-container .react-select.country-code-selector div.country-code-selector__control div.country-code-selector__indicators div.country-code-selector__indicator {
+  padding-left: 0px;
+}
+.authentication-page .main-container .main .send-otp-form .country-code-selector-and-mobile-number-input-container .react-select.country-code-selector div.country-code-selector__menu {
+  border-radius: 0px;
+}
+.authentication-page .main-container .main .send-otp-form .country-code-selector-and-mobile-number-input-container .react-select.country-code-selector div.country-code-selector__menu div.country-code-selector__menu-list {
+  padding: 0px;
+}
+.authentication-page .main-container .main .send-otp-form .country-code-selector-and-mobile-number-input-container .react-select.country-code-selector div.country-code-selector__menu div.country-code-selector__menu-list div.country-code-selector__option {
+  word-wrap: break-word;
+}
+.authentication-page .main-container .main .send-otp-form .country-code-selector-and-mobile-number-input-container .react-select.country-code-selector div.country-code-selector__menu div.country-code-selector__menu-list div.country-code-selector__option.country-code-selector__option--is-selected {
+  background-color: #669F00;
+}
+.authentication-page .main-container .main .send-otp-form .send-otp-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#92C23E, #669F00);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 2em;
+  cursor: pointer;
+}
+.authentication-page .main-container .main .send-otp-form .send-otp-button #rotating-loading-icon {
+  width: 1.3em;
+}
+.authentication-page .main-container .main .verify-otp-form {
+  width: 100%;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.authentication-page .main-container .main .verify-otp-form .form-label {
+  padding: 0.5em 0;
+  margin-bottom: 1em;
+  font-size: 1em;
+  color: #808080;
+  text-align: left;
+}
+.authentication-page .main-container .main .verify-otp-form .verify-otp-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#92C23E, #669F00);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  cursor: pointer;
+}
+.authentication-page .main-container .main .verify-otp-form .verify-otp-button #rotating-loading-icon {
+  width: 1.3em;
+}
+.authentication-page .main-container .main .form-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #D3D3D3;
+  border-radius: 5px;
+  font-size: 1em;
+}
+.authentication-page .main-container .main .form-input.mobile-number-input {
+  width: 70%;
+  border-width: 0px;
+}
+.authentication-page .main-container .main .resend-otp-button {
+  margin: 1.5em 0 1.6em 0;
+  align-self: center;
+  color: #669F00;
+  text-decoration: none;
+  cursor: pointer;
+}
+.authentication-page .main-container .main .countdown-timer {
+  margin: 1.5em 0 1.6em 0;
+  align-self: center;
+  color: #D0C9D6;
+}
+.authentication-page .main-container .main .otp-and-otpless-login-divider {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.authentication-page .main-container .main .otp-and-otpless-login-divider .divider-line {
+  width: 44%;
+  border-top: 1px solid #D3D3D3;
+}
+.authentication-page .main-container .main .otp-and-otpless-login-divider .or-text {
+  margin: 0px 10px;
+  font-size: 1em;
+  color: #808080;
+  vertical-align: middle;
+}
+.authentication-page .main-container .main .otpless-login-page-container {
+  width: 100%;
+}
+.authentication-page .main-container .main .otpless-login-page-container .otpless-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#92C23E, #669F00);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+}
+.authentication-page .main-container .main .link-my-phone-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#92C23E, #669F00);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  cursor: pointer;
+}
+
+.my-lockers-page {
+  width: 100vw;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  background-color: #F7F5F9;
+}
+.my-lockers-page .header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: #FFFFFF;
+}
+.my-lockers-page .header-container .header {
+  width: 100%;
+  max-width: 480px;
+  padding: 0px 20px;
+  height: 3.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.my-lockers-page .header-container .header .page-heading {
+  font-size: 1em;
+  color: #1A051D;
+}
+.my-lockers-page .header-container .header img.durolt-logo {
+  width: auto;
+  height: 1.5em;
+  margin: 1em 0em;
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+}
+.my-lockers-page .header-container .header .user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+.my-lockers-page .header-container .header .user .icon-md-account-circle {
+  font-size: 1.8em;
+  color: #1A051D;
+}
+.my-lockers-page .main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .loading-icon-container {
+  width: 3em;
+}
+.my-lockers-page .main-container .main .loading-text {
+  color: #669F00;
+}
+.my-lockers-page .main-container .main .booked-lockers-list {
+  width: 100%;
+  margin-bottom: 6em;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 2em;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-information-container {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #92C23E;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-information-container .icon-container.locker-icon-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #92C23E;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-information-container .icon-container.locker-icon-container .icon-md-square {
+  font-size: 1.5em;
+  color: #1A051D;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-information-container .locker-information {
+  width: 100%;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-information-container .locker-information .locker-unit-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-information-container .locker-information .locker-unit-container .icon-container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-information-container .locker-information .locker-unit-container .icon-container .icon-ri-door-lock-box-fill {
+  font-size: 1.8em;
+  color: #1A051D;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-information-container .locker-information .locker-unit-container .locker-unit {
+  font-size: 1.5em;
+  color: #1A051D;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-information-container .locker-information .locker-bank-name-and-remaining-time-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-information-container .locker-information .locker-bank-name-and-remaining-time-container .locker-bank-name-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-information-container .locker-information .locker-bank-name-and-remaining-time-container .locker-bank-name-container .icon-container {
+  width: 40px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-information-container .locker-information .locker-bank-name-and-remaining-time-container .locker-bank-name-container .icon-container .icon-gi-lockers {
+  font-size: 1.2em;
+  color: #1A051D;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-information-container .locker-information .locker-bank-name-and-remaining-time-container .locker-bank-name-container .locker-bank-name {
+  font-size: 0.8em;
+  color: #1A051D;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-information-container .locker-information .locker-bank-name-and-remaining-time-container .remaining-time-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-information-container .locker-information .locker-bank-name-and-remaining-time-container .remaining-time-container .icon-container {
+  width: 40px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-information-container .locker-information .locker-bank-name-and-remaining-time-container .remaining-time-container .icon-container .icon-io-timer {
+  font-size: 1.2em;
+  color: #1A051D;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-information-container .locker-information .locker-bank-name-and-remaining-time-container .remaining-time-container .remaining-time {
+  font-size: 0.8em;
+  color: #1A051D;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-information-container .icon-container.chevron-icon-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-information-container .icon-container.chevron-icon-container .icon-md-chevron-right {
+  font-size: 2em;
+  color: #1A051D;
+  transition: 0.2s;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker.accordion-expanded .locker-information-container .icon-container.chevron-icon-container .icon-md-chevron-right {
+  transform: rotate(90deg);
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .locker-bank-name-container {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .locker-bank-name-container .icon-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .locker-bank-name-container .icon-container .icon-gi-lockers {
+  font-size: 1.5em;
+  color: #669F00;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .locker-bank-location-container {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .locker-bank-location-container .icon-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .locker-bank-location-container .icon-container .icon-md-location-on {
+  font-size: 1.5em;
+  color: #669F00;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .booking-duration-container {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .booking-duration-container .icon-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .booking-duration-container .icon-container .icon-io-time {
+  font-size: 1.5em;
+  color: #669F00;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .remaining-time-container {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .remaining-time-container .icon-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .remaining-time-container .icon-container .icon-io-timer {
+  font-size: 1.5em;
+  color: #669F00;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .remaining-grace-time-container {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .remaining-grace-time-container .icon-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .remaining-grace-time-container .icon-container .icon-io-timer {
+  font-size: 1.5em;
+  color: #669F00;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .remaining-time-and-overstay-time-container {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .remaining-time-and-overstay-time-container .remaining-time-container {
+  width: 100%;
+  margin: 0 10px 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .remaining-time-and-overstay-time-container .remaining-time-container .icon-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .remaining-time-and-overstay-time-container .remaining-time-container .icon-container .icon-io-timer {
+  font-size: 1.5em;
+  color: #669F00;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .remaining-time-and-overstay-time-container .overstay-time-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .remaining-time-and-overstay-time-container .overstay-time-container .icon-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .remaining-time-and-overstay-time-container .overstay-time-container .icon-container .icon-md-more-time {
+  font-size: 1.5em;
+  color: #FF6464;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .remaining-time-and-overstay-time-container .overstay-time-container .overstay-time {
+  margin-right: 10px;
+  color: #FF6464;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .warning-message-container {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #D3D3D3;
+  border-radius: 0px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: #D0C9D6;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .warning-message-container .warning-message {
+  width: 100%;
+  font-size: 0.9em;
+  color: #1A051D;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .warning-message-container.overstay-warning {
+  background-color: #FF6464;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .warning-message-container.overstay-warning .warning-message {
+  color: #FFFFFF;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .overstay-pay-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#92C23E, #669F00);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .slide-button {
+  border: 1px solid #DFF8B1;
+  border-radius: 5px;
+  background-color: #DFF8B1;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .slide-button .slide-button-overlay {
+  border-radius: 5px;
+  background-color: #92C23E;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .slide-button .slide-button-overlay .slide-button-caret {
+  border-radius: 5px;
+  background-color: #669F00;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .booked-locker .locker-detailed-information-container .slide-button .slide-button-overlay .slide-button-caret #chevrons-right {
+  width: 2em;
+}
+.my-lockers-page .main-container .main .booked-lockers-list .warning-message {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  color: #808080;
+}
+.my-lockers-page .main-container .main .error-message {
+  margin-bottom: 2em;
+  text-align: center;
+  color: #FF6464;
+}
+.my-lockers-page .main-container .main .try-again-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#92C23E, #669F00);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.my-lockers-page .main-container .main .book-another-locker-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#92C23E, #669F00);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+}
+.my-lockers-page .main-container .main .book-another-locker-button.disabled-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#D3D3D3, #D3D3D3);
+  text-align: center;
+  color: #808080;
+  font-size: 1em;
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.react-modal-overlay.payment-confirmation-modal-overlay {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(160, 160, 160, 0.5333333333);
+  backdrop-filter: blur(5px);
+}
+.react-modal-overlay.payment-confirmation-modal-overlay .react-modal.payment-confirmation-modal {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px 20px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+.react-modal-overlay.payment-confirmation-modal-overlay .react-modal.payment-confirmation-modal .payment-confirmation-modal-content {
+  width: 100%;
+}
+.react-modal-overlay.payment-confirmation-modal-overlay .react-modal.payment-confirmation-modal .payment-confirmation-modal-content .payment-info {
+  width: 100%;
+  margin-bottom: 2em;
+}
+.react-modal-overlay.payment-confirmation-modal-overlay .react-modal.payment-confirmation-modal .payment-confirmation-modal-content .payment-info .info-row {
+  width: 100%;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.react-modal-overlay.payment-confirmation-modal-overlay .react-modal.payment-confirmation-modal .payment-confirmation-modal-content .payment-info .info-row .title {
+  color: #808080;
+}
+.react-modal-overlay.payment-confirmation-modal-overlay .react-modal.payment-confirmation-modal .payment-confirmation-modal-content .payment-info .info-row .value {
+  color: #1A051D;
+}
+.react-modal-overlay.payment-confirmation-modal-overlay .react-modal.payment-confirmation-modal .payment-confirmation-modal-content .buttons-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.react-modal-overlay.payment-confirmation-modal-overlay .react-modal.payment-confirmation-modal .payment-confirmation-modal-content .buttons-container .cancel-button {
+  margin-right: 20px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#FF6464, #C75252);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.react-modal-overlay.payment-confirmation-modal-overlay .react-modal.payment-confirmation-modal .payment-confirmation-modal-content .buttons-container .pay-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#92C23E, #669F00);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.react-modal-overlay.qr-code-reader-modal-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.react-modal-overlay.qr-code-reader-modal-overlay .react-modal.qr-code-reader-modal {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: rgba(32, 32, 32, 0.5333333333);
+  backdrop-filter: blur(5px);
+}
+.react-modal-overlay.qr-code-reader-modal-overlay .react-modal.qr-code-reader-modal .qr-code-reader-container {
+  width: 100%;
+  max-width: 480px;
+  padding: 20px;
+}
+.react-modal-overlay.qr-code-reader-modal-overlay .react-modal.qr-code-reader-modal .qr-code-reader-container .qr-code-reader {
+  width: 100%;
+}
+.react-modal-overlay.qr-code-reader-modal-overlay .react-modal.qr-code-reader-modal .qr-code-reader-container .qr-code-reader section {
+  border-radius: 5px;
+}
+.react-modal-overlay.qr-code-reader-modal-overlay .react-modal.qr-code-reader-modal .qr-code-reader-container .qr-code-reader section div {
+  box-shadow: #92C23E 0px 0px 0px 2px inset !important;
+}
+.react-modal-overlay.qr-code-reader-modal-overlay .react-modal.qr-code-reader-modal .qr-code-reader-container .button-container {
+  width: 100%;
+  margin: 2em 0;
+}
+.react-modal-overlay.qr-code-reader-modal-overlay .react-modal.qr-code-reader-modal .qr-code-reader-container .button-container .cancel-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#FF6464, #C75252);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.locker-size-page {
+  width: 100vw;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  background-color: #F7F5F9;
+}
+.locker-size-page .header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: #FFFFFF;
+}
+.locker-size-page .header-container .header {
+  width: 100%;
+  max-width: 480px;
+  padding: 0px 20px;
+  height: 3.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.locker-size-page .header-container .header .back-button.icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: absolute;
+  left: 10px;
+  cursor: pointer;
+}
+.locker-size-page .header-container .header .back-button.icon-container .icon-md-chevron-left {
+  font-size: 1.8em;
+  color: #1A051D;
+}
+.locker-size-page .header-container .header .page-heading {
+  font-size: 1em;
+  color: #1A051D;
+}
+.locker-size-page .header-container .header img.durolt-logo {
+  width: auto;
+  height: 1.5em;
+  margin: 1em 0em;
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+}
+.locker-size-page .header-container .header .user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+.locker-size-page .header-container .header .user .icon-md-account-circle {
+  font-size: 1.8em;
+  color: #1A051D;
+}
+.locker-size-page .main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.locker-size-page .main-container .main {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.locker-size-page .main-container .main .loading-icon-container {
+  width: 3em;
+}
+.locker-size-page .main-container .main .locker-size-form-heading {
+  font-size: 1em;
+  color: #808080;
+  text-align: left;
+}
+.locker-size-page .main-container .main .locker-size-form {
+  width: 100%;
+  margin: 2em 0em;
+}
+.locker-size-page .main-container .main .locker-size-form .form-item {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 2em;
+  background-color: #DFF8B1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.locker-size-page .main-container .main .locker-size-form .form-item .form-label {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#92C23E, #669F00);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+}
+.locker-size-page .main-container .main .locker-size-form .form-item .form-label .form-input {
+  display: none;
+}
+.locker-size-page .main-container .main .locker-size-form .form-item .selected {
+  background-image: linear-gradient(#669F00, #92C23E) !important;
+}
+.locker-size-page .main-container .main .locker-size-form .form-item .blurred {
+  opacity: 0.5;
+}
+.locker-size-page .main-container .main .locker-size-form .form-item .booking-period-form {
+  width: 100%;
+  padding: 0px 20px 20px;
+}
+.locker-size-page .main-container .main .locker-size-form .form-item .booking-period-form .locker-price, .locker-size-page .main-container .main .locker-size-form .form-item .booking-period-form .booking-period, .locker-size-page .main-container .main .locker-size-form .form-item .booking-period-form .total-amount {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.locker-size-page .main-container .main .locker-size-form .form-item .booking-period-form .locker-price .title, .locker-size-page .main-container .main .locker-size-form .form-item .booking-period-form .locker-price .value, .locker-size-page .main-container .main .locker-size-form .form-item .booking-period-form .booking-period .title, .locker-size-page .main-container .main .locker-size-form .form-item .booking-period-form .booking-period .value, .locker-size-page .main-container .main .locker-size-form .form-item .booking-period-form .total-amount .title, .locker-size-page .main-container .main .locker-size-form .form-item .booking-period-form .total-amount .value {
+  color: #1A051D;
+}
+.locker-size-page .main-container .main .locker-size-form .form-item .booking-period-form .booking-start-and-end-times {
+  margin-top: 0.25em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.locker-size-page .main-container .main .locker-size-form .form-item .booking-period-form .booking-start-and-end-times .value {
+  color: #1A051D;
+}
+.locker-size-page .main-container .main .locker-size-form .form-item .booking-period-form .booking-start-and-end-times .booking-duration-warning {
+  color: #FF6464;
+}
+.locker-size-page .main-container .main .locker-size-form .form-item .booking-period-form .booking-period .form-input {
+  width: 50%;
+  padding: 8px;
+  border: 1px solid #D3D3D3;
+  border-radius: 5px;
+}
+.locker-size-page .main-container .main .next-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#92C23E, #669F00);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.locker-size-page .main-container .main .next-button.disabled-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#D3D3D3, #D3D3D3);
+  text-align: center;
+  color: #808080;
+  font-size: 1em;
+  cursor: not-allowed;
+  user-select: none;
+}
+.locker-size-page .main-container .main .next-button #rotating-loading-icon {
+  width: 1.3em;
+}
+
+.react-modal-overlay.booking-confirmation-modal-overlay {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(160, 160, 160, 0.5333333333);
+  backdrop-filter: blur(5px);
+}
+.react-modal-overlay.booking-confirmation-modal-overlay .react-modal.booking-confirmation-modal {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px 20px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+.react-modal-overlay.booking-confirmation-modal-overlay .react-modal.booking-confirmation-modal .booking-confirmation-modal-content {
+  width: 100%;
+}
+.react-modal-overlay.booking-confirmation-modal-overlay .react-modal.booking-confirmation-modal .booking-confirmation-modal-content .booking-info {
+  width: 100%;
+  margin-bottom: 2em;
+}
+.react-modal-overlay.booking-confirmation-modal-overlay .react-modal.booking-confirmation-modal .booking-confirmation-modal-content .booking-info .info-row {
+  width: 100%;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.react-modal-overlay.booking-confirmation-modal-overlay .react-modal.booking-confirmation-modal .booking-confirmation-modal-content .booking-info .info-row .title {
+  color: #808080;
+}
+.react-modal-overlay.booking-confirmation-modal-overlay .react-modal.booking-confirmation-modal .booking-confirmation-modal-content .booking-info .info-row .value {
+  color: #1A051D;
+}
+.react-modal-overlay.booking-confirmation-modal-overlay .react-modal.booking-confirmation-modal .booking-confirmation-modal-content .booking-info .info-row .value.booking-duration-value {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.react-modal-overlay.booking-confirmation-modal-overlay .react-modal.booking-confirmation-modal .booking-confirmation-modal-content .buttons-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.react-modal-overlay.booking-confirmation-modal-overlay .react-modal.booking-confirmation-modal .booking-confirmation-modal-content .buttons-container .cancel-button {
+  margin-right: 20px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#FF6464, #C75252);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.react-modal-overlay.booking-confirmation-modal-overlay .react-modal.booking-confirmation-modal .booking-confirmation-modal-content .buttons-container .book-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#92C23E, #669F00);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.payment-details-page {
+  width: 100vw;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  background-color: #F7F5F9;
+}
+.payment-details-page .header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: #FFFFFF;
+}
+.payment-details-page .header-container .header {
+  width: 100%;
+  max-width: 480px;
+  padding: 0px 20px;
+  height: 3.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.payment-details-page .header-container .header .page-heading {
+  font-size: 1em;
+  color: #1A051D;
+}
+.payment-details-page .main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.payment-details-page .main-container .main {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.payment-details-page .main-container .main .loading-icon-container {
+  width: 3em;
+}
+
+.react-modal-overlay.transaction-error-modal-overlay {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(160, 160, 160, 0.5333333333);
+  backdrop-filter: blur(5px);
+}
+.react-modal-overlay.transaction-error-modal-overlay .react-modal.transaction-error-modal {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px 20px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+.react-modal-overlay.transaction-error-modal-overlay .react-modal.transaction-error-modal .transaction-error-modal-content {
+  width: 100%;
+}
+.react-modal-overlay.transaction-error-modal-overlay .react-modal.transaction-error-modal .transaction-error-modal-content .message-and-button-container {
+  width: 100%;
+}
+.react-modal-overlay.transaction-error-modal-overlay .react-modal.transaction-error-modal .transaction-error-modal-content .message-and-button-container .icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.react-modal-overlay.transaction-error-modal-overlay .react-modal.transaction-error-modal .transaction-error-modal-content .message-and-button-container .icon-container .icon-md-error {
+  font-size: 2em;
+  color: #C75252;
+}
+.react-modal-overlay.transaction-error-modal-overlay .react-modal.transaction-error-modal .transaction-error-modal-content .message-and-button-container .error-message {
+  margin-top: 1em;
+  font-size: 1em;
+  color: #C75252;
+  text-align: center;
+}
+.react-modal-overlay.transaction-error-modal-overlay .react-modal.transaction-error-modal .transaction-error-modal-content .message-and-button-container .redirection-message {
+  margin-top: 1em;
+  font-size: 1em;
+  color: #808080;
+  text-align: center;
+}
+.react-modal-overlay.transaction-error-modal-overlay .react-modal.transaction-error-modal .transaction-error-modal-content .message-and-button-container .ok-button {
+  margin-top: 1em;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#C75252, #C75252);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.payment-completion-page {
+  width: 100vw;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  background-color: #F7F5F9;
+}
+.payment-completion-page .header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: #FFFFFF;
+}
+.payment-completion-page .header-container .header {
+  width: 100%;
+  max-width: 480px;
+  padding: 0px 20px;
+  height: 3.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.payment-completion-page .header-container .header .page-heading {
+  font-size: 1em;
+  color: #1A051D;
+}
+.payment-completion-page .header-container .header img.durolt-logo {
+  width: auto;
+  height: 1.5em;
+  margin: 1em 0em;
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+}
+.payment-completion-page .header-container .header .user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+.payment-completion-page .header-container .header .user .icon-md-account-circle {
+  font-size: 1.8em;
+  color: #1A051D;
+}
+.payment-completion-page .main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.payment-completion-page .main-container .main {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.payment-completion-page .main-container .main .loading-icon-container {
+  width: 3em;
+}
+.payment-completion-page .main-container .main .booking-info-container {
+  width: 100%;
+  padding: 1em;
+  border-radius: 5px;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  background-color: #FFFFFF;
+  box-shadow: #E0E0E0 0px 0px 2px 0px;
+}
+.payment-completion-page .main-container .main .booking-info-container .booking-status-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.payment-completion-page .main-container .main .booking-info-container .booking-status-container .icon-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.payment-completion-page .main-container .main .booking-info-container .booking-status-container .icon-container .icon-md-check-circle {
+  font-size: 3em;
+  color: #669F00;
+}
+.payment-completion-page .main-container .main .booking-info-container .booking-status-container .booking-status-message {
+  margin: 0.6em 0 1em 0;
+  font-size: 1.2em;
+  color: #669F00;
+  text-transform: capitalize;
+}
+.payment-completion-page .main-container .main .booking-info-container .booking-info {
+  border-top: 1px solid #D0C9D6;
+}
+.payment-completion-page .main-container .main .booking-info-container .booking-info .info-row {
+  width: 100%;
+  padding-top: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.payment-completion-page .main-container .main .booking-info-container .booking-info .info-row .icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.payment-completion-page .main-container .main .booking-info-container .booking-info .info-row .icon-container .booking-info-icon {
+  font-size: 1.4em;
+  color: #1A051D;
+}
+.payment-completion-page .main-container .main .booking-info-container .booking-info .info-row .title-and-value-container {
+  margin-left: 10px;
+}
+.payment-completion-page .main-container .main .booking-info-container .booking-info .info-row .title-and-value-container .title {
+  font-size: 12px;
+  color: #808080;
+}
+.payment-completion-page .main-container .main .booking-info-container .booking-info .info-row .title-and-value-container .value {
+  font-size: 1em;
+  color: #1A051D;
+}
+.payment-completion-page .main-container .main .booking-info-container .booking-info .info-row .locker-size {
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: #1A051D;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #FFFFFF;
+  position: absolute;
+  right: 0;
+}
+.payment-completion-page .main-container .main .slide-button-container {
+  width: 100%;
+}
+.payment-completion-page .main-container .main .slide-button-container .loading-icon-and-message-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.payment-completion-page .main-container .main .slide-button-container .loading-icon-and-message-container .loading-icon-container {
+  width: 3em;
+}
+.payment-completion-page .main-container .main .slide-button-container .loading-icon-and-message-container .loading-message {
+  margin-top: 0.5em;
+  color: #669F00;
+}
+.payment-completion-page .main-container .main .slide-button-container .slide-button {
+  border: 1px solid #DFF8B1;
+  border-radius: 5px;
+  background-color: #DFF8B1;
+}
+.payment-completion-page .main-container .main .slide-button-container .slide-button .slide-button-overlay {
+  border-radius: 5px;
+  background-color: #92C23E;
+}
+.payment-completion-page .main-container .main .slide-button-container .slide-button .slide-button-overlay .slide-button-caret {
+  border-radius: 5px;
+  background-color: #669F00;
+}
+.payment-completion-page .main-container .main .slide-button-container .slide-button .slide-button-overlay .slide-button-caret #chevrons-right {
+  width: 2em;
+}
+.payment-completion-page .main-container .main .open-locker-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#92C23E, #669F00);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.payment-completion-page .main-container .main .open-locker-button #rotating-loading-icon {
+  width: 1.3em;
+}
+
+.locker-opened-page {
+  width: 100vw;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  background-color: #F7F5F9;
+}
+.locker-opened-page .header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: #FFFFFF;
+}
+.locker-opened-page .header-container .header {
+  width: 100%;
+  max-width: 480px;
+  padding: 0px 20px;
+  height: 3.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.locker-opened-page .header-container .header .page-heading {
+  font-size: 1em;
+  color: #1A051D;
+}
+.locker-opened-page .header-container .header img.durolt-logo {
+  width: auto;
+  height: 1.5em;
+  margin: 1em 0em;
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+}
+.locker-opened-page .header-container .header .user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+.locker-opened-page .header-container .header .user .icon-md-account-circle {
+  font-size: 1.8em;
+  color: #1A051D;
+}
+.locker-opened-page .main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.locker-opened-page .main-container .main {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.locker-opened-page .main-container .main .loading-icon-container {
+  width: 3em;
+}
+.locker-opened-page .main-container .main .locker-opened-info {
+  width: 100%;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.locker-opened-page .main-container .main .locker-usage-instructions {
+  width: 100%;
+  margin-bottom: 4em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.locker-opened-page .main-container .main .release-locker-button {
+  margin-top: 2em;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#FF6464, #C75252);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.locker-opened-page .main-container .main .release-locker-button #rotating-loading-icon {
+  width: 1.3em;
+}
+.locker-opened-page .main-container .main .my-lockers-button, .locker-opened-page .main-container .main .book-another-locker-button {
+  margin-top: 2em;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#92C23E, #669F00);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+}
+.locker-opened-page .main-container .main .my-lockers-button.disabled-button, .locker-opened-page .main-container .main .book-another-locker-button.disabled-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#D3D3D3, #D3D3D3);
+  text-align: center;
+  color: #808080;
+  font-size: 1em;
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.react-modal-overlay.release-locker-confirmation-modal-overlay {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(160, 160, 160, 0.5333333333);
+  backdrop-filter: blur(5px);
+}
+.react-modal-overlay.release-locker-confirmation-modal-overlay .react-modal.release-locker-confirmation-modal {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px 20px;
+  border-radius: 5px;
+  outline: none;
+  background-color: #FFFFFF;
+}
+.react-modal-overlay.release-locker-confirmation-modal-overlay .react-modal.release-locker-confirmation-modal .release-locker-confirmation-modal-content {
+  width: 100%;
+}
+.react-modal-overlay.release-locker-confirmation-modal-overlay .react-modal.release-locker-confirmation-modal .release-locker-confirmation-modal-content .confirmation-message {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #1A051D;
+  text-align: center;
+}
+.react-modal-overlay.release-locker-confirmation-modal-overlay .react-modal.release-locker-confirmation-modal .release-locker-confirmation-modal-content .info-message {
+  margin-bottom: 20px;
+  font-size: 0.8em;
+  color: #808080;
+  text-align: center;
+}
+.react-modal-overlay.release-locker-confirmation-modal-overlay .react-modal.release-locker-confirmation-modal .release-locker-confirmation-modal-content .buttons-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.react-modal-overlay.release-locker-confirmation-modal-overlay .react-modal.release-locker-confirmation-modal .release-locker-confirmation-modal-content .buttons-container .cancel-button {
+  margin-right: 20px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#FFFFFF, #FFFFFF);
+  text-align: center;
+  color: #669F00;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+  padding: 9px;
+  border: 1px solid #669F00;
+  border-radius: 5px;
+}
+.react-modal-overlay.release-locker-confirmation-modal-overlay .react-modal.release-locker-confirmation-modal .release-locker-confirmation-modal-content .buttons-container .release-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#FF6464, #C75252);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.locker-released-page {
+  width: 100vw;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  background-color: #F7F5F9;
+}
+.locker-released-page .header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: #FFFFFF;
+}
+.locker-released-page .header-container .header {
+  width: 100%;
+  max-width: 480px;
+  padding: 0px 20px;
+  height: 3.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.locker-released-page .header-container .header .page-heading {
+  font-size: 1em;
+  color: #1A051D;
+}
+.locker-released-page .header-container .header img.durolt-logo {
+  width: auto;
+  height: 1.5em;
+  margin: 1em 0em;
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+}
+.locker-released-page .header-container .header .user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+.locker-released-page .header-container .header .user .icon-md-account-circle {
+  font-size: 1.8em;
+  color: #1A051D;
+}
+.locker-released-page .main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.locker-released-page .main-container .main {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.locker-released-page .main-container .main .loading-icon-container {
+  width: 3em;
+}
+.locker-released-page .main-container .main .locker-released-info {
+  width: 100%;
+  margin-bottom: 2em;
+  text-align: center;
+}
+.locker-released-page .main-container .main .locker-released-instructions {
+  width: 100%;
+  text-align: center;
+}
+.locker-released-page .main-container .main .buttons-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.locker-released-page .main-container .main .buttons-container .my-lockers-button, .locker-released-page .main-container .main .buttons-container .book-new-locker-button {
+  margin-top: 2em;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#92C23E, #669F00);
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1em;
+  cursor: pointer;
+  user-select: none;
+}
+.locker-released-page .main-container .main .buttons-container .book-new-locker-button.disabled-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(#D3D3D3, #D3D3D3);
+  text-align: center;
+  color: #808080;
+  font-size: 1em;
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.container {
+  padding: 25px;
+  text-align: justify;
+}
+.container .section {
+  margin-bottom: 30px;
+}
+.container .title {
+  margin-bottom: 10px;
+  font-family: "SFProDisplay-Semibold", sans-serif;
+}
+.container .paraText {
+  margin-bottom: 10px;
+  font-family: var(--primary-font-regular);
+}
+.container .listItem {
+  padding-left: 10px;
+}
+
+.about-screen-page {
+  width: 100vw;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.about-screen-page .header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.about-screen-page .header-container .header {
+  width: 100%;
+  max-width: 480px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.about-screen-page .header-container .header img.durolt-logo {
+  width: auto;
+  height: 4em;
+  margin: 2.5em;
+}
+.about-screen-page .main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.about-screen-page .main-container .main {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.about-screen-page .main-container .main .container-about {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+.about-screen-page .main-container .main .linking_group {
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.organisation-list-page {
+  background-color: #F7F5F9;
+  height: 100%;
+}
+.organisation-list-page .box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-bottom: 30px;
+}
+.organisation-list-page .listItem {
+  width: 100%;
+  background-color: #FFFFFF;
+  padding-block: 15px;
+  border-radius: 8px;
+}
+.organisation-list-page .itemTitle {
+  margin-left: 20px;
+  font-size: 20px;
+  font-family: "SFProText-Regular";
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.button-container .button {
+  width: 100%;
+  border-radius: 6px;
+  background: linear-gradient(#669F00, #92C23E) !important;
+  font-size: 16px;
+  font-family: "SFProText-Medium";
+  text-transform: none;
+}
+
+.support-screen-page {
+  width: 100vw;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.support-screen-page .main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.support-screen-page .main-container .main {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.support-screen-page .main-container .main .container {
+  text-align: center;
+  padding-top: 20;
+}
+.support-screen-page .main-container .main .title {
+  font-size: 18px;
+  color: "#000";
+}
+.support-screen-page .main-container .main .LinkingGroup {
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.support-screen-page .main-container .main .flexGrow {
+  flex-grow: 1;
+}
+
+.change-pin-page {
+  width: 100vw;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.change-pin-page .main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.change-pin-page .main-container .main {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.change-pin-page .main-container .main .inputView {
+  width: "100%";
+}
+.change-pin-page .main-container .main .input {
+  color: #1A051D;
+  box-shadow: 0px 7px 10px -5px rgba(0, 0, 0, 0.32);
+  height: 40;
+  background-color: "#FFF";
+  border-radius: 6;
+  font-family: var(--primary-font-regular);
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.change-pin-page .main-container .main .forgetPINText {
+  color: #92C23E;
+  font-family: var(--primary-font-regular);
+  font-size: 16px;
+  text-align: right;
+  padding-bottom: 10px;
+}
+.change-pin-page .main-container .main .btnView {
+  width: "100%";
+}
+.change-pin-page .main-container .main .btnView .lineraGradientBtntxt {
+  text-align: center;
+  font-family: "SFProText-Semibold";
+  font-size: 17px;
+  color: #FFFFFF;
+  line-height: 2;
+}
+.change-pin-page .main-container .main .modal-title-style {
+  font-size: 20px !important;
+  line-height: 10;
+}
+
+.new-reserve-locker-page {
+  height: 100%;
+}
+.new-reserve-locker-page .qr-code-reader {
+  width: 100%;
+}
+.new-reserve-locker-page .sheet-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: transparent;
+  padding-left: 20px;
+}
+.new-reserve-locker-page .sheet-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: aqua;
+}
+.new-reserve-locker-page .modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 500px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.new-reserve-locker-page .modal-content h2 {
+  margin-top: 0;
+}
+.new-reserve-locker-page .modal-content button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.favourite-locker-page {
+  height: 100%;
+}
+.favourite-locker-page .initial-view {
+  background-color: red;
+  border-radius: 16px;
+  border-color: black;
+  width: 52px;
+  height: 52px;
+  justify-content: "center";
+  align-items: "center";
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../fonts/Segoe UI.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Segoe UI Bold";
+  src: url("../fonts/Segoe UI Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProDisplay-Bold";
+  src: url("../fonts/SFProDisplay-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProDisplay-Semibold";
+  src: url("../fonts/SFProDisplay-Semibold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProText-Bold";
+  src: url("../fonts/SFProText-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProText-Medium";
+  src: url("../fonts/SFProText-Medium.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProText-Regular";
+  src: url("../fonts/SFProText-Regular.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProText-Semibold";
+  src: url("../fonts/SFProText-Semibold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  background-color: white;
+}
+
+.app {
+  width: 100vw;
+  height: 93vh;
+}
+.app .footer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: #D0C9D6;
+}
+.app .footer-container .footer {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.app .footer-container .footer .language-selector-dropdown-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.app .footer-container .footer .language-selector-dropdown-container .title.language-selector-dropdown-title {
+  margin-right: 1em;
+  color: #1A051D;
+}/*# sourceMappingURL=main.css.map */

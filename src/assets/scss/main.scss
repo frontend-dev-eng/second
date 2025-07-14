@@ -1,0 +1,162 @@
+@import "partials/style-constants";
+@import "partials/mixin";
+@import "partials/functions";
+@import "partials/user-modal";
+@import "partials/footer";
+@import "partials/home-page";
+@import "partials/authentication-page";
+@import "partials/my-lockers-page";
+@import "partials/locker-size-page";
+@import "partials/payment-details-page";
+@import "partials/payment-completion-page";
+@import "partials/locker-opened-page";
+@import "partials/locker-released-page";
+@import "partials/help-page";
+@import "partials/organisation-list-page";
+@import "partials/button-component";
+@import "partials/support-screen-page";
+@import "partials/change-pin-page";
+@import "partials/new-reserve-locker-page";
+@import "partials/favourites";
+@import "partials/select-zone";
+@import "partials/sublocation-one-page";
+@import "partials/sublocation-two-page";
+@import "partials/select-locker-bank-page";
+@import "partials/sublocation-three-page";
+@import "partials/about-screen-page";
+@import "partials/team-locker-page";
+@import "partials/terms-and-conditions-page";
+@import "partials/custom-drawer-page";
+@import "partials/sub-header";
+@import "partials/main-header";
+@import "partials/favourite-locker-page";
+@import "partials/select-parcel-user-screen-page";
+@import "partials/profile-update-page";
+@import "partials/connect-mobile-page";
+@import "partials/circular-progress-loader";
+@import "partials/parcel-details-screen-page";
+@import "partials/use-case-list-screen-page";
+@import "partials/drop-parcel-screen-page";
+@import "partials/notification-page";
+@import "partials/login-screen";
+@import "partials/verify-otp-page";
+@import "partials/locker-list-page";
+@import "partials/locker-layout-page";
+@import "partials/select-locker-size-page";
+@import "partials/my-locker-list-page";
+@import "partials/locker-more-options";
+@import "partials/server-error";
+@import "partials/release-locker-page";
+@import "partials/showTimer";
+@import "partials/assign-locker-page";
+@import "partials/open-locker-page";
+@import "partials/home-screen-page";
+@import "partials/open-parcel-page";
+@import "partials/connection-lost-modal";
+@import "partials/custom-slider-component";
+@import "partials/custom_mobile_input";
+@import "partials/custom-switch-input";
+@import "partials/custom_text_input";
+@import "partials/locker-banks";
+@import "partials/locker-item";
+@import "partials/custom-box-input";
+@import "partials/custom-search-bar";
+@import "partials/badge-component";
+@import "partials/custom-qr-code-reader";
+@import "partials/equipment-grid-page";
+@import "partials/equipment-details-page";
+@import "partials/equipment-card";
+@import "partials/verification-successful-page";
+@import "partials/unit-opened-page";
+@import "partials/payment-successful-page";
+@import "partials/invoice-page";
+@import "partials/my-rented-products";
+@import "partials/take-product-photo-page";
+@import "partials/account-details-page";
+@import "partials/masked-input";
+@import "partials/back-header";
+@import "partials/chat-bot-page";
+@import "partials/faq-page";
+@import "partials/contact-us-page";
+@import "partials/privacy-policy-page";
+@import "partials/custom-dialog";
+@import "partials/spinner-loader";
+@import "partials/locker-unit-selection-page";
+@import "partials/swipe-to-open-page";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url("../fonts/Segoe\ UI.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: "Segoe UI Bold";
+    src: url("../fonts/Segoe\ UI\ Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SFProDisplay-Bold";
+    src: url("../fonts/SFProDisplay-Bold.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SFProDisplay-Semibold";
+    src: url("../fonts/SFProDisplay-Semibold.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SFProText-Bold";
+    src: url("../fonts/SFProText-Bold.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SFProText-Medium";
+    src: url("../fonts/SFProText-Medium.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SFProText-Regular";
+    src: url("../fonts/SFProText-Regular.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SFProText-Semibold";
+    src: url("../fonts/SFProText-Semibold.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    background-color: white;
+}
+
+.app {
+    background-color: var(--app-background-color);
+    max-width: 480px;
+    margin: 0 auto;
+
+    &.dark-app{
+        background-color: var(--app-dark-background-color);
+    }
+}

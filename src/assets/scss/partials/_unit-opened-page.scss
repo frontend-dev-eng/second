@@ -1,0 +1,125 @@
+.unit-opened-page {
+    @include page-element-dimensions;
+    @include flex-item(column, center, space-between);
+
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            @include flex-item(column);
+            padding-top: 0px;
+            padding-bottom: 80px;
+
+            .img-container {
+                width: 100%;
+                @include flex-item;
+
+                .unit-opened-img {
+                    width: 100%;
+                    max-width: 200px;
+                    height: auto;
+                }
+            }
+
+            .title-and-description-container {
+                margin-top: 1em;
+
+                .title {
+                    @include app-heading-2(var(--primary-text-color), var(--primary-font-bold));
+                    text-align: center;
+                }
+
+                .description {
+                    margin-top: 2px;
+                    @include app-text(var(--tertiary-text-color), 14px);
+                    text-align: center;
+                }
+            }
+
+            .remaining-time-container {
+                // border: 1px solid gold;
+                margin: 3em 0;
+                @include flex-item;
+
+                .time-unit-box {
+                    padding: 16px;
+                    // border: 1px solid red;
+                    border-radius: 8px;
+                    box-shadow: 0px 2px 4px 1px $app-light-grey-color;
+                    @include flex-item(column);
+
+                    .digits {
+                        @include app-heading-2(var(--primary-text-color), var(--primary-font-bold));
+                    }
+
+                    .time-unit {
+                        @include app-text(var(--primary-text-color), 14px);
+                    }
+                }
+
+                .separating-colon {
+                    padding: 0 8px;
+                    @include app-heading-2;
+                }
+            }
+
+            .buttons-container {
+                width: 100%;
+                margin-bottom: 3em;
+
+                #rented-products-button, #rent-new-product-button {
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid $app-dark-purple-color;
+                    border-radius: 8px;
+                    margin-bottom: 12px;
+                    @include app-text(var(--primary-text-color), 20px, var(--secondary-font-bold));
+                    display: block;
+                    text-transform: capitalize;
+                }
+            }
+
+            .end-rental-and-return-button-container {
+                width: 100%;
+                max-width: $max-content-width;
+                padding: 16px;
+                background-color: #F4F2F8;
+                box-shadow: 0px -5px 8px $app-light-grey-color;
+                position: fixed;
+                bottom: 0px; // to show above the existing footer
+
+                .end-rental-and-return-button {
+                    width: 100%;
+                    height: 56px;
+                    padding: 10px;
+                    @include app-text(var(--secondary-text-color), 20px, var(--secondary-font-bold));
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+
+@media (max-height: 720px) {
+    .unit-opened-page {
+        .main-container {
+            .main {
+                .img-container {
+                    .unit-opened-img {
+                        max-width: 170px;
+                    }
+                }
+
+                .title-and-description-container {
+                    margin-top: 0.5em;
+                }
+
+                .remaining-time-container {
+                    margin: 2em 0;
+                }
+            }
+        }
+    }
+}

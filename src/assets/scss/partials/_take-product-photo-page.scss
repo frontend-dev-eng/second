@@ -1,0 +1,125 @@
+.take-product-photo-page {
+    @include page-element-dimensions;
+    @include flex-item(column, center, space-between);
+
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            @include flex-item(column);
+
+            .video-container {
+                position: relative;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .switch-button {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                z-index: 10;
+            }
+
+            .button-row {
+                position: absolute;
+                bottom: 30px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                gap: 10px;
+                /* Space between buttons */
+
+                .capture-button,
+                .close-button {
+                    background-color: rgba(255, 255, 255, 0.7);
+                    border: none;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    border-radius: 5px;
+
+                    &.close{
+                        background-color: $app-light-coral;
+                    }
+                }
+            }
+
+            .img-container {
+                width: 100%;
+                @include flex-item;
+                margin-bottom: 20px;
+                
+
+                .take-photo-img {
+                    width: 100%;
+                    max-width: 290px;
+                    height: auto;
+                }
+            }
+
+            .take-and-retake-btn-container {
+                width: 100%;
+                margin-bottom: 30px;
+
+                .take-photo-button {
+                    width: 100%;
+                    @include app-text(var(--secondary-text-color), 20px, var(--secondary-font-bold));
+                    text-transform: capitalize;
+                }
+
+                .retake-photo-button {
+                    width: 100%;
+                    border: 1px solid var(--btn-outlined-border-color);
+                    padding: 10px;
+                    @include app-text(var(--primary-text-color), 20px, var(--secondary-font-bold));
+                    text-transform: capitalize;
+                }
+            }
+
+            .pricing-info {
+                align-self: flex-start;
+
+                .min-price-in-words {
+                    @include app-text(var(--primary-text-color), 20px, var(--secondary-font-bold));
+                }
+
+                .max-price-in-words {
+                    @include app-text(var(--primary-text-color), 16px, var(--secondary-font-semibold));
+                }
+
+                .pricing-info-button {
+                    margin-top: 8px;
+                    @include flex-item(row, center, flex-start);
+
+                    .pricing-info {
+                        @include tertiary-button($app-dark-purple-color);
+                        @include app-heading-4($font-color: var(--primary-text-color), $font-family: var(--secondary-font-bold));
+                    }
+                }
+            }
+
+            .pay-now-button-container{
+                width: 100%;
+                max-width: $max-content-width;
+                padding: 16px;
+                background-color: #F3F3F3;
+                position: fixed;
+                bottom: 0px; // to show above the existing footer
+                box-shadow: 0px -4px 15px 0px #0000001A;
+
+                .pay-now-button{
+                    width: 100%;
+                    padding: 10px;
+                    @include app-text(var(--secondary-text-color), 20px, var(--secondary-font-bold));
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}

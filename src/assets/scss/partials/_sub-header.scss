@@ -1,0 +1,30 @@
+.sub-header {
+    width: 100%;
+    padding: 1.5em;
+    @include flex-item;
+    position: relative;
+    background-color: var(--sub-header-background-color);
+
+    &.dark {
+        background-color: var(--app-dark-background-color);
+    }
+
+    #back-button {
+        position: absolute;
+        left: 28px;
+
+        .back-icon-and-title {
+            @include flex-item;
+
+            .back-title {
+                @include app-text($app-dark-purple-color, $base-font-size, var(--primary-font-semibold));
+            }
+        }
+    }
+
+    .header-title {
+        @include app-text($app-dark-purple-color, $base-font-size, var(--primary-font-semibold));
+        text-align: center;
+        line-height: 2;
+    }
+}

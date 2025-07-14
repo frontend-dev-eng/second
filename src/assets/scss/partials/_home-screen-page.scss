@@ -1,0 +1,49 @@
+.home-screen-page {
+    @include page-element-dimensions;
+    
+    .main-container {
+        .main {
+            .tabBarStyle{
+                .MuiTabs-flexContainer{
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+
+                .tabBarLabel {
+                    width: 50%;
+                    font-size: toRem(13);
+                    font-family: var(--primary-font-medium);
+                    line-height: 15px;
+                    color: $app-grey-color;
+                    
+                        
+                &.single-tab {
+                    width: 100%;
+                }
+
+                &.Mui-selected {
+                    color: $app-yellow-green-color;
+                }
+            }
+
+            .favoriteTabLabel {
+                color: $app-grey-color;
+            }
+
+            .indicatorStyle {
+                background-color: $app-yellow-green-color;
+
+                &.indicator-full-width {
+                    width: 100% !important;
+                    left: 0 !important;
+                }
+            }
+        }
+
+            .homescreenTabs{
+                margin: auto;
+                width: 95%;
+            }
+        }
+    }
+}

@@ -1,0 +1,171 @@
+@mixin page-element-dimensions {
+    height: 100vh;
+    // margin-bottom: 90px;
+
+    @media (max-width: 320px) {
+        height: 115vh;
+    }
+}
+
+@mixin header-element-dimensions {
+    width: 100%;
+    max-width: $max-content-width;
+    padding: 0px 20px;
+}
+
+@mixin main-element-dimensions {
+    width: 100%;
+    max-width: $max-content-width;
+    padding: 40px 28px 0;
+}
+
+@mixin footer-element-dimensions {
+    width: 100%;
+    max-width: $max-content-width;
+    padding: 20px 20px;
+}
+
+@mixin flex-item ($flex-direction: row, $align-items: center, $justify-content: center, $flex-wrap: nowrap) {
+    display: flex;
+    flex-direction: $flex-direction;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    flex-wrap: $flex-wrap;
+}
+
+@mixin item-border ($border-width: 1px, $border-style: solid, $border-color: $app-light-grey-color, $border-radius: 0px) {
+    border: $border-width $border-style $border-color;
+    border-radius: $border-radius;
+}
+
+@mixin primary-button ($background-color : var(--btn-primary-contained-bg-image), $text-color: var(--btn-primary-text-color), $cursor-type: pointer) {
+    width: 100%;
+    padding: 10px;
+    border-radius: var(--btn-border-radius);
+    background-image: $background-color;
+    text-align: center;
+    color: $text-color;
+    font-size: 1em;
+    cursor: $cursor-type;
+    @include text-selection-disabled;
+}
+
+@mixin blurred-button ($background-color : var(--btn-blurred-bg-image), $text-color: var(--btn-blurred-text-color), $cursor-type: pointer) {
+    width: 100%;
+    padding: 10px;
+    border-radius: var(--btn-border-radius);
+    background: $background-color;
+    text-align: center;
+    color: $text-color;
+    font-size: 1em;
+    cursor: $cursor-type;
+    @include text-selection-disabled;
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 5px 15px 0px #00000026;
+
+}
+
+@mixin secondary-button ($background-color: var(--btn-secondary-contained-bg-image), $text-color: var(--secondary-text-color), $cursor-type: pointer) {
+    width: 100%;
+    padding: 10px;
+    border-radius: var(--btn-border-radius);
+    background-image: $background-color;
+    text-align: center;
+    color: $text-color;
+    font-size: 1em;
+    cursor: $cursor-type;
+    @include text-selection-disabled;
+}
+
+@mixin tertiary-button ($text-color: $app-green-color, $text-decoration: underline, $cursor-type: pointer) {
+    color: $text-color;
+    text-decoration: $text-decoration;
+    cursor: $cursor-type;
+}
+
+@mixin disabled-button ($background-color :var(--btn-primary-disabled-contained-bg-image), $text-color:var(--btn-primary-disabled-text-color), $cursor-type: not-allowed) {
+    @include primary-button($background-color, $text-color, $cursor-type);
+}
+
+@mixin text-selection-disabled {
+    user-select: none;
+}
+
+@mixin placeholder-color($placeholder-color: var(--input-placeholder-color)) {
+    color: $placeholder-color !important;
+    font-weight: var(--input-placeholder-font-weight);
+    font-size: 14px;
+    font-family: var(--primary-font-regular);
+}
+
+// app-text (color, font-size, font-family)
+@mixin app-text ($font-color: $app-dark-purple-color, $font-size: $base-font-size, $font-family: var(--primary-font-regular),$font-weight: 400) {
+    color: $font-color;
+    font-size: $font-size;
+    // font-size: toRem($font-size);
+    font-family: $font-family;
+    font-weight: $font-weight;
+}
+
+// app heading with specified font-size
+// app-heading (color, font-size, font-family)
+@mixin app-heading ($font-color: $app-dark-purple-color, $font-size: $base-font-size, $font-family: var(--primary-font-regular)) {
+    @include app-text($font-color, $font-size, $font-family);
+}
+
+// app headings with fixed font size
+// app-heading-[1-6] (color, font-family)
+@mixin app-heading-1 ($font-color: var(--primary-text-color), $font-family: var(--primary-font-regular)) {
+    @include app-text($font-color, 32px, $font-family);
+}
+
+@mixin app-heading-2 ($font-color: var(--primary-text-color), $font-family: var(--primary-font-regular)) {
+    @include app-text($font-color, 24px, $font-family);
+}
+
+@mixin app-heading-3 ($font-color: var(--primary-text-color), $font-family: var(--primary-font-regular)) {
+    @include app-text($font-color, 18px, $font-family);
+}
+
+@mixin app-heading-4 ($font-color: var(--primary-text-color), $font-family: var(--primary-font-regular),$font-weight: 400) {
+    @include app-text($font-color, 16px, $font-family,$font-weight);
+}
+
+@mixin app-heading-5 ($font-color: var(--primary-text-color), $font-family: var(--primary-font-regular)) {
+    @include app-text($font-color, 14px, $font-family);
+}
+
+@mixin app-heading-6 ($font-color: var(--primary-text-color), $font-family: $app-font-primary-bold) {
+    @include app-text($font-color, 12px, $font-family);
+}
+
+@mixin validation-error-text(
+    $margin: 10px 0 0 15px,
+    $font-family: var(--primary-font-regular),
+    $font-size: toRem(12),
+    $font-weight: 400,
+    $line-height: 14.52px,
+    $text-align: left,
+    $color: $app-coral-red
+) {
+    margin: $margin;
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    text-align: $text-align;
+    color: $color;
+}
+
+@mixin default-button ($background-color : var(--btn-primary-contained-bg-image), $text-color: var(--btn-primary-text-color), $cursor-type: pointer) {
+    width: 100%;
+    padding: 10px;
+    border-radius: var(--btn-border-radius);
+    background-image: linear-gradient(#92C23E,#669F00);
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1em;
+    cursor: $cursor-type;
+    @include text-selection-disabled;
+}

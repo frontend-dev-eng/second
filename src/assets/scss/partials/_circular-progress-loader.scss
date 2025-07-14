@@ -1,0 +1,35 @@
+.pleaseWaitMainView {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    
+    .pleaseWaitSubView {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        background-color: $app-white-color;
+        padding: 10px;
+        border-radius: 6px;
+        gap: 20px;
+
+        .loader{
+            color: var(--app-loader-color);
+        }
+        
+        .pleaseWaitText {
+            color: $app-dark-purple-color;
+            font-size: toRem(16);
+            font-family: var(--primary-font-regular);
+        }
+        
+    }
+}

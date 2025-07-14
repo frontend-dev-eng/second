@@ -1,0 +1,67 @@
+/*
+.locker-opened-page {
+    @include page-element-dimensions;
+    @include flex-item(column, center, space-between);
+    background-color: $app-ghost-white-color;
+
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            @include flex-item(column);
+
+            .loading-icon-container {
+                width: 3em
+            }
+
+            .locker-opened-info {
+                width: 100%;
+                margin-bottom: 1em;
+                @include flex-item;
+            }
+
+            .locker-usage-instructions {
+                width: 100%;
+                margin-bottom: 4em;
+                @include flex-item;
+            }
+            .remaining-time-donut-chart-container{
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+.custom-dialog-qr-code{
+    width: 400px;
+}
+*/
+
+.locker-opened-page {
+    @include page-element-dimensions;
+    @include flex-item(column, center, space-between);
+
+    .main-container {
+        width: 100%;
+        min-height: 70%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            min-height: 70%;
+            @include flex-item(column);
+
+            .locker-open-icon-container {
+                margin-bottom: 1.5em;
+            }
+
+            .locker-unit, .close-door-instructions {
+                margin-bottom: 1em;
+                @include app-text(var(--tertiary-text-color), 18px);
+                text-align: center;
+            }
+        }
+    }
+}

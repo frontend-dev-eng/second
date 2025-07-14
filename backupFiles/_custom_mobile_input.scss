@@ -1,0 +1,29 @@
+
+
+.container {
+    @include placeholder-color;
+    width: 100%;
+
+    .phoneInput {
+        color: var(--input-text-color);
+        background-color: var(--empty-box-input-background-color);
+        border-radius: 6px;
+        font-family: var(--primary-font-regular);;
+        font-size: toRem(15);
+        display: inline-block;
+        border: var(--input-border-color);
+        width: 100%;
+
+        &.error-border{
+            border-color: $app-coral-red;
+        }
+
+        .dropdown{
+            width: 100%;
+        }
+    }
+}
+
+
+
+

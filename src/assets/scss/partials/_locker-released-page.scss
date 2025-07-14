@@ -1,0 +1,44 @@
+.locker-released-page {
+    @include page-element-dimensions;
+    @include flex-item(column, center, space-between);
+    background-color: $app-ghost-white-color;
+
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            @include flex-item(column);
+
+            .loading-icon-container {
+                width: 3em;
+            }
+
+            .locker-released-info {
+                width: 100%;
+                margin-bottom: 2em;
+                text-align: center;
+            }
+
+            .locker-released-instructions {
+                width: 100%;
+                text-align: center;
+            }
+
+            .buttons-container {
+                width: 100%;
+                @include flex-item(column);
+
+                .my-lockers-button, .book-new-locker-button {
+                    margin-top: 2em;
+                    @include primary-button;
+                }
+
+                .book-new-locker-button.disabled-button {
+                    @include disabled-button;
+                }
+            }
+        }
+    }
+}

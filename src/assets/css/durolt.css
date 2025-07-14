@@ -1,0 +1,162 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../fonts/Segoe UI.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Segoe UI Bold";
+  src: url("../fonts/Segoe UI Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProDisplay-Bold";
+  src: url("../fonts/SFProDisplay-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProDisplay-Semibold";
+  src: url("../fonts/SFProDisplay-Semibold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProText-Bold";
+  src: url("../fonts/SFProText-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProText-Medium";
+  src: url("../fonts/SFProText-Medium.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProText-Regular";
+  src: url("../fonts/SFProText-Regular.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProText-Semibold";
+  src: url("../fonts/SFProText-Semibold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+:root {
+  --primary-font-regular: "SFProText-Regular",sans-serif;
+  --primary-font-medium: "SFProText-Medium",sans-serif;
+  --primary-font-semibold: "SFProText-Semibold",sans-serif;
+  --primary-font-bold: "SFProText-Bold",sans-serif;
+  --secondary-font-semibold: "SFProDisplay-Semibold",sans-serif;
+  --secondary-font-bold: "SFProDisplay-Bold",sans-serif;
+  --btn-primary-contained-bg-image: linear-gradient(#92C23E,#669F00);
+  --btn-secondary-contained-bg-image: linear-gradient(#92C23E,#669F00);
+  --btn-outlined-border-color: #9BBF54;
+  --btn-primary-disabled-contained-bg-image: #D3D3D3;
+  --btn-primary-text-color: #FFFFFF;
+  --btn-primary-disabled-text-color: #808080;
+  --btn-warning-contained-bg-image: linear-gradient(#FF6464,#C75252);
+  --btn-blurred-bg-image: #FFFFFF1A;
+  --btn-blurred-text-color: #FFFFFF;
+  --btn-warning-text-color: #FFFFFF;
+  --btn-text-variant-color: #669F00;
+  --btn-border-radius: 12px;
+  --footer-style-bg-color: #D0C9D6;
+  --footer-style-text-color: #1A051D;
+  --input-placeholder-color: #1A051D;
+  --input-placeholder-font-weight: 400;
+  --input-background-image: #FFFFFF;
+  --input-text-color: #1A051D;
+  --input-border-color: 1px solid #CFC9D5;
+  --input-border-radius: 6px;
+  --primary-text-color: #1A051D;
+  --secondary-text-color: #1A051D;
+  --tertiary-text-color: #1A051D;
+  --slider-background-color: #B9E066;
+  --slider-overlay-bg-color: #92C23E;
+  --slider-caret-bg-color: #739E2E;
+  --slider-caret-color: #FFFFFF;
+  --slider-top-left-border-radius: 8px;
+  --slider-top-right-border-radius: 8px;
+  --slider-bottom-left-border-radius: 8px;
+  --slider-bottom-right-border-radius: 8px;
+  --slider-border-radius: var(--slider-top-left-border-radius) var(--slider-top-right-border-radius) var(--slider-bottom-right-border-radius) var(--slider-bottom-left-border-radius);
+  --app-background-color: #F7F5F9;
+  --sub-header-background-color: #F7F5F9;
+  --app-dark-background-color: #1A051D;
+  --app-loader-color: #739E2E;
+}
+
+.app-header-logo {
+  width: 47px;
+  height: 42px;
+}
+
+.MuiDrawer-paper {
+  width: 100%;
+}
+
+.header-cancel-icon {
+  width: 24px;
+}
+.header-cancel-icon.dark {
+  filter: invert(1);
+}
+
+.verify-email-mobile-text {
+  font-size: 34px !important;
+  font-family: var(--primary-font-regular) !important;
+  font-weight: 600;
+}
+
+.enter-otp-text {
+  font-size: 14px !important;
+  color: #808080 !important;
+  text-align: center;
+  font-family: var(--primary-font-regular) !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.input-tab-bar-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.input-tab-bar-container .tab-bar {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+@media (max-width: 360px) and (max-height: 629px) {
+  .input-tab-bar-container .tab-bar {
+    margin-top: 5px;
+  }
+}
+.input-tab-bar-container .tab-bar-label {
+  font-family: var(--primary-font-medium);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+  color: #808080;
+  text-align: center;
+  text-transform: capitalize;
+}
+.input-tab-bar-container .tab-bar-label.Mui-selected {
+  color: #92C23E;
+}
+.input-tab-bar-container .indicator-style {
+  background-color: #92C23E;
+}

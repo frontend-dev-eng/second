@@ -1,0 +1,68 @@
+.my-rented-products-page {
+    @include page-element-dimensions;
+    @include flex-item(column, center, space-between);
+
+    .main-container {
+        width: 100%;
+        @include flex-item;
+
+        .main {
+            @include main-element-dimensions;
+            padding: 30px 10px 0;
+            @include flex-item(column);
+
+            .title-container {
+                margin-top: 1em;
+
+                .title {
+                    @include app-heading-3(var(--primary-text-color), var(--primary-font-bold));
+                    text-align: center;
+                }
+
+            }
+
+            .equipment-category{
+                display: flex;
+                flex-direction: row;
+
+                .radio-button{
+                    color: var(--primary-text-color);
+                }
+            }
+
+            .end-rental-and-rent-new-product-container {
+                width: 100%;
+                max-width: $max-content-width;
+                padding: 16px;
+                background-color:#F3F3F3;
+                box-shadow: 0px -4px 15px 0px #0000001A;
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                bottom: 0px; // to show above the existing footer
+
+                .end-rental-and-return-button {
+                    border: 1px solid var(--btn-outlined-border-color);
+                    width: 100%;
+                    padding: 10px;
+                    @include app-text(var(--primary-text-color), 20px, var(--secondary-font-bold));
+                    text-transform: capitalize;
+                }
+
+                .rent-new-product-button {
+                    width: 100%;
+                    @include app-text(var(--secondary-text-color), 20px, var(--secondary-font-bold));
+                    text-transform: capitalize;
+                }
+                .disable-single-blocked{
+                    pointer-events: none;      
+                    opacity: 0.5;               
+                    cursor: not-allowed;        
+                    background-color: #ccc;     
+                    color: #666;               
+                    border: 1px solid #aaa;  
+                }
+            }
+        }
+    }
+}

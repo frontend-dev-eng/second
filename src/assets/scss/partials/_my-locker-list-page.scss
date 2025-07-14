@@ -1,0 +1,491 @@
+.my-locker-list-page {
+    padding: 0 10px;
+    
+    .lockergrid{
+        margin-top: 20px;
+        max-height: 65vh;
+        overflow-y : auto;
+
+        .badge-view {
+            margin-bottom: 20px;
+
+            .badge-pink {
+                background-color: $app-light-pink-color;
+            }
+
+            .badge-green {
+                background-color: $app-yellow-green-color;
+            }
+        }
+
+        .divider-view {
+            width: 100%;
+
+            .divider {
+                color: $app-dimmed-grey-color;
+                margin: 20px auto;
+                @media (min-height : 500px) and (max-height : 799px){
+                    margin: 15px auto   ;
+                }
+            }
+        }
+
+        
+        .request-digits{
+            text-align: center;
+            color: $app-dark-purple-color;
+            font-size: toRem(15);
+            font-family: var(--primary-font-regular);;
+            line-height: 16px;
+            max-width: 300px;
+        }
+        
+        .no-locker-data{
+            text-align: center;
+            font-size: toRem(16);
+            font-family: var(--primary-font-regular);;
+            line-height: 16px;
+            max-width: 300px;
+        }
+    }
+    
+    .search-bar-view {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .barcode-float-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient($app-green-color,$app-yellow-green-color);
+            width: 40px;
+            height: 38px;
+            border-radius: 5px;
+            color: $app-white-color;
+            margin-left: 5px;
+        }
+    }
+
+        .loader {
+            display: flex;
+            justify-content: center;
+
+            .loader-style {
+                color: $app-yellow-green-color;
+            }
+        }
+    
+    .LockerWrapper {
+        border-radius: 14px;
+
+        .lockerContainer {
+            width: 100%;
+            background: none;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 8px;
+            
+            
+            .listItem {
+                position: relative;
+                display: flex;
+                border-radius: 12px;
+                padding: 8px;
+                justify-content: space-between;
+                width: 100%;
+                border: 1px solid $app-white-color;
+
+    
+        &.listItem-dimmed {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(255, 255, 255, 0.6);
+                    border-radius: 12px;
+                    z-index: 1;
+                }
+            }
+
+                
+                &.no-bottom-radius {
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+                }
+
+                &.list-item-blocked {
+                  background: linear-gradient($app-bittersweet-color, $app-english-vermillion-color)
+                }
+
+                .content-wrapper {
+                    width: 70%;
+                    flex-direction: row;
+                }
+
+                .content {
+                    display: flex;
+                    align-items: center;
+
+                    .imageGroup {
+                        position: relative;
+                        display: inline-block;
+                    }
+                    .contentInfo {
+                        margin-left: 12px;
+                        width: 100%;
+
+                        .locker-title {
+                            font-size: 1.2rem;
+                            font-family: var(--primary-font-regular);;
+                            max-width: 190px;
+                            text-align: left;
+                            font-style: normal;
+                            font-weight: 400;
+                            margin-top: 3px;
+                            line-height: normal;
+
+                            &.locker-title-block{
+                                color: $app-white-color ;
+                            }
+                        }
+
+                        .text-one {
+                            font-size: toRem(10);
+                            font-family: var(--primary-font-regular);;
+                            line-height: 16px;
+                            opacity: 0.6;
+                            text-align: left;
+
+                            &.text-one-block {
+                                color: $app-white-color;
+                            }
+                        }
+
+                        .textline-three {
+                            font-family: 'SFProText-SemiBold', sans-serif;
+                            font-size: toRem(16);
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            margin-top: 3px;
+                            text-align: left;
+
+                            &.textline-three-block {
+                                color: $app-white-color;
+                            }
+                        }
+                    }
+                }
+
+                .openLockerSlider {
+                    background-color: $app-yellow-green-color;
+                    border-radius: 14px;
+                    overflow: hidden;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    margin-bottom: 8px;
+                    position: absolute;
+                    top: 0;
+                    z-index: 1;
+                    height: 100%;
+                    margin-left: -6px;
+
+                }
+
+                .dotted-line-up {
+                    display: grid;
+                    align-content: center;
+                    justify-content: center;
+                    width: 30%;
+
+                    .dotted-line-text {
+                        text-align: right;
+                        margin: 8px 0 8px 12px;
+                        width: 25px;
+                        color: $app-grey-color;
+                        font-family: var(--primary-font-regular);;
+                        font-size: toRem(10);
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+
+                .cod-view {
+                    width: 50px;
+                    margin-top: 25px;
+                    height: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 4px;
+                    border: 1px solid $app-light-coral;
+                    background-color: $app-light-pink-color;
+
+                    .cod-view-text {
+                        font-family: var(--primary-font-medium);
+                        font-size: toRem(12);
+                        color: $app-white-color;
+                        font-weight: 400;
+                        line-height: 9.68px;
+                        text-align: center;
+                    }
+
+                }
+
+                .overstay-indicator {
+                    padding: 4px 8px;
+                    border-radius: 8px;
+                    align-self: center;
+                    background-color: $app-coral-red;
+
+                    .overstay-text {
+                        font-size: 1.3em;
+                        font-weight: bold;
+                        color: white;
+                    }
+                }
+
+                .usage-timer {
+                    align-self: center;
+
+                    .usage-timer-text {
+                        font-size: 1.3em;
+                    }
+                }
+                
+                .arrow-icon{
+                    align-self: center;
+                    // margin-top: 15px;
+                }
+            }
+
+            .extra-locker-details {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 13px;
+                
+                .user-details {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 7px;
+
+                    .initial-view {
+                        background-color: $app_tea_green_color;
+                        border-radius: 16px;
+                        padding: 10px;
+                        width:75px;
+                        height: 57px;
+                    }
+
+                    .contentInfo {
+                        margin-left: 12px;
+                        width: 100%;
+
+                        .locker-title {
+                            font-size: toRem(13);
+                            font-family: var(--primary-font-regular);;
+                            max-width: 190px;
+                            text-align: left;
+                            font-style: normal;
+                            font-weight: 400;
+                            margin-top: 3px;
+                            line-height: normal;
+
+                            &.locker-title-block{
+                                color: $app-white-color ;
+                            }
+                        }
+
+                        .text-one {
+                            font-size: toRem(10);
+                            font-family: var(--primary-font-regular);;
+                            line-height: 16px;
+                            opacity: 0.6;
+                            text-align: left;
+                            width: 106px;
+
+                            &.text-one-block {
+                                color: $app-white-color;
+                            }
+                        }
+
+                        .textline-three {
+                            font-family: 'SFProText-SemiBold', sans-serif;
+                            font-size: toRem(16);
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            margin-top: 3px;
+                            text-align: left;
+                            width: 137px;
+
+                            &.textline-three-block {
+                                color: $app-white-color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .booking-info-container {
+                width: 100%;
+                padding: 0 8px;
+
+                .info-row {
+                    padding: 6px 0;
+                    @include flex-item(row, center, flex-start);
+
+                    .icon-container {
+                        margin-right: 10px;
+                        color: var(--btn-text-variant-color);
+
+                        &.overstay {
+                            color: $app-coral-red;
+                        }
+                    }
+
+                    .title {
+                        min-width: 120px;
+                        margin-right: 10px;
+                        text-align: left;
+                    }
+
+                    .value {
+                        text-align: left;
+                    }
+                }
+
+                .overstay-info {
+                    padding: 10px;
+                    border-radius: 8px;
+                    margin: 10px 0;
+                    background-color: $app-coral-red;
+
+                    .overstay-heading {
+                        margin-bottom: 5px;
+                        font-size: 1.4em;
+                        font-weight: bold;
+                        color: white;
+                        text-align: center;
+                    }
+
+                    .overstay-text {
+                        width: 100%;
+                        border-top: 1px solid white;
+                        padding-top: 5px;
+                        font-size: 1.3em;
+                        font-weight: bold;
+                        color: white;
+                    }
+                }
+            }
+
+            .buttons-view {
+                width: 100%;
+
+                .buttons-container {
+                    padding: 0 8px;
+                    @include flex-item(row, stretch);
+
+                    #open-without-checkout-button {
+                        width: 100%;
+                        font-size: 1.3em;
+                    }
+
+                    #open-with-checkout-button {
+                        width: 100%;
+                        margin-left: 10px;
+                        font-size: 1.3em;
+                    }
+
+                    #overstay-button {
+                        font-size: 1.3em;
+                    }
+                }
+            }
+
+            .slider-view{
+                width: 100%;
+
+                .slider{
+                    @include item-border(1px, solid, $app_tea_green_color, 14px);
+                    height: 47px;
+                    border-top-left-radius: 0px;
+                    border-top-right-radius: 0px;
+                }
+
+                .cod-slider{
+                    background-color: $app-yellow-green-color;
+                }
+            }
+
+        }
+    }
+
+    .noAssignedLockerBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+
+        .dashicon {
+            width: 150px;
+            height: 150px;
+        }
+    
+        .assignText {
+            font-size: toRem(18);
+            font-family: 'SegoeUI-Bold', sans-serif;
+            padding-top: 57px;
+            padding-bottom: 13px;
+        }
+    }
+
+    .assignNewlocker {
+        position: fixed;
+        bottom: 90px;
+        right: 0;
+
+        .floatingBtn {
+            margin-top: 32px;
+            margin-right: 10px;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            right: 25%;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            right: 30%;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1439px) {
+            right: 32%;
+        }
+
+        @media (min-width: 1440px) and (max-width: 1919px) {
+            right: 35%;
+        }
+
+        @media (min-width: 1920px) {
+            right: 38%;
+        }
+    }
+
+    .shareText {
+        font-size: toRem(17);
+        color: $app-grey-color;
+        font-family: var(--primary-font-semibold);
+        padding-right: 6px;
+    }
+}
