@@ -4,6 +4,7 @@ import { IconButton, TextField } from '@mui/material'
 
 const CustomSearchBar = (props) => {
   const { inputId = '', placeholder,handleSearchUser,onChange,icon,value } = props
+  console.log(`CustomSearchBar props:`, props)
 
    return (
     <TextField

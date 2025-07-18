@@ -1298,7 +1298,11 @@ const MyLockeListPage = () => {
     }
 
    
-console.log(`search-bar is active or not:${settings?.usecase_settings?.show_search_bar_pwa?.value}`)
+    console.log(`search-bar is active or not:${settings?.usecase_settings?.show_search_bar_pwa?.value}`)
+    console.log(`verify with barcode is active or not:${settings?.usecase_settings?.verify_with_barcode_pwa?.value}`)
+    console.log(`verify with qr code is active or not:${settings?.usecase_settings?.verify_with_qr_code_pwa?.value}`)
+    console.log(`is extra feature enabled:${extraFeatureEnabled}`);
+    console.log(`is assignment pricing enabled:${isAssignmentPricingEnabled}`)
     return (
         <Box className='my-locker-list-page'>
             <Box className='main-container'>
