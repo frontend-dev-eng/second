@@ -461,11 +461,33 @@ const LockerSizePage = () => {
             const incrementallySortedBookingSlots = sortBookingSlotsBasedOnDuration(lockerSize.size_pricing);
 
             // Generate readable duration ranges like "0 - 2 Hours", "2 - 4 Hours", etc.
+            // let previousDurationInMilliseconds = 0;
+            // incrementallySortedBookingSlots.forEach((slot) => {
+            //     slot.durationRange = `${previousDurationInMilliseconds / 3600000} - ${slot.durationInMilliseconds / 3600000} Hours`;
+            //     previousDurationInMilliseconds = slot.durationInMilliseconds;
+            // });
+
+            // Function to convert milliseconds to a readable format (e.g., "2 Hours" or "30 min") more readable
+            // This function checks if the duration is less than an hour, then converts it to minutes 
+            const convertToReadableTime = (ms) => {
+                    if (ms < 3600000) {
+                        const minutes = Math.round(ms / 60000); 
+                        return `${minutes} min`;
+                    } else {
+                        const hours = Math.floor(ms / 3600000); 
+                        return `${hours} Hours`;
+                    }
+                };
             let previousDurationInMilliseconds = 0;
             incrementallySortedBookingSlots.forEach((slot) => {
-                slot.durationRange = `${previousDurationInMilliseconds / 3600000} - ${slot.durationInMilliseconds / 3600000} Hours`;
+                const from = convertToReadableTime(previousDurationInMilliseconds);
+                const to = convertToReadableTime(slot.durationInMilliseconds);
+                slot.durationRange = `${from} - ${to}`;
+                console.log('slot duration range:', slot.durationRange);
+
                 previousDurationInMilliseconds = slot.durationInMilliseconds;
             });
+
 
             // Save the sorted and processed slots back to the locker size object
             lockerSize.bookingSlots = incrementallySortedBookingSlots;
